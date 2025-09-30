@@ -7,26 +7,14 @@
 
     <meta name="author" content="Jen-Tse (Jay) Huang">
     <meta name="descripction" content="Jen-Tse (Jay) Huang's Homepage">
-    <meta name="keywords" content="Jen-Tse Huang, Computer Science, Artificial Intelligence, Natural Language Processing, Large Language Model">
+    <meta name="keywords" content="Jen-Tse Huang, Computer Science, Artificial Intelligence, Natural Language Processing, Large Language Models">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="images/icon.jpg">
-
-    <script src="scripts/functions.js"></script>
     
     <style>
-
-        .clustrmaps-container {
-          width: 200px;
-          height: 200px;
-          position: relative;
-        }
-
-        .clustrmaps-container iframe {
-          width: 100%;
-          height: 100%;
-        }
 
         html {
             scroll-behavior: smooth;
@@ -70,6 +58,29 @@
             background-color: #6891D5;
             color: white;
         }
+
+    .filters-wrapper {
+      background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      border-radius: 12px; width: 840px; margin: 20px auto 0; padding: 12px 14px;
+    }
+    .filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 6px 0; }
+    .filter-label { font-weight: 700; min-width: 72px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+      border: 1.5px solid #cfd7e6; border-radius: 999px; padding: 6px 12px;
+      user-select: none; transition: all .15s ease;
+      font-size: 14px; line-height: 1;
+    }
+    .chip input { display: none; }
+    .chip.is-on { background: #6891D5; color: #fff; border-color: #6891D5; }
+    .chip:hover { box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+
+    .filters-actions { display:flex; gap:12px; margin-top: 8px; }
+    .small { font-size: 12px; color: #667; }
+
+    .pub-table { transition: opacity .15s ease, transform .15s ease; }
+    .pub-table[hidden] { display: none !important; }
+
     </style>
 </head>
 
@@ -94,46 +105,43 @@
     <b>Email</b>: <font id="email" style="display:inline;">jhuan236@jh.edu</font>
 </p>
 
-<!-- publication -->
+<!-- filters -->
+<div class="filters-wrapper" id="filters">
+    <div class="filter-row" id="role-bar" role="group" aria-label="Roles filter">
+        <div class="filter-label">Role</div>
+        <label class="chip is-on" data-bar="roles" data-value="all"><input type="checkbox" checked />All</label>
+        <label class="chip" data-bar="roles" data-value="first"><input type="checkbox" />First</label>
+        <label class="chip" data-bar="roles" data-value="co-first"><input type="checkbox" />Co-first</label>
+        <label class="chip" data-bar="roles" data-value="corresponding"><input type="checkbox" />Corresponding</label>
+        <label class="chip" data-bar="roles" data-value="last"><input type="checkbox" />Last</label>
+        <label class="chip" data-bar="roles" data-value="other"><input type="checkbox" />Other</label>
+    </div>
 
+    <div class="filter-row" id="topic-bar" role="group" aria-label="Topics filter">
+        <div class="filter-label">Topics</div>
+        <label class="chip is-on" data-bar="topics" data-value="all"><input type="checkbox" checked />All</label>
+        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation</label>
+        <label class="chip" data-bar="topics" data-value="cogpsy"><input type="checkbox" />Cognitive & Psychological</label>
+        <label class="chip" data-bar="topics" data-value="fairness"><input type="checkbox" />Fairness</label>
+        <label class="chip" data-bar="topics" data-value="safety"><input type="checkbox" />Safety</label>
+        <label class="chip" data-bar="topics" data-value="role-play"><input type="checkbox" />Role-play</label>
+        <label class="chip" data-bar="topics" data-value="code"><input type="checkbox" />Code</label>
+    </div>
+</div>
+
+<!-- publications -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
     <tbody>
         <tr>
             <td>
-                <sectionheading>&nbsp;&nbsp;Conference</sectionheading>
+                <sectionheading>&nbsp;&nbsp;2025</sectionheading>
             </td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- lam2025codecrash -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/lam2025codecrash.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <heading>CodeCrash: Stress Testing LLM Reasoning under Structural and Semantic Perturbations</heading><br>
-                    Man Ho Lam, Chaozheng Wang, <b>Jen-tse Huang</b>, Michael R. Lyu<br>
-                    NeurIPS, 2025<br>
-                    | <a href="https://arxiv.org/abs/2504.14119">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/CodeCrash">code</a> |
-                    <a href="https://cuhk-arise.github.io/CodeCrash/">homepage</a> |
-                </p>
-            </td>
-
         </tr>
     </tbody>
 </table>
 
 <!-- yuan2025evaluating -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,evaluation,safety">
     <tbody>
         <tr>
 
@@ -157,24 +165,25 @@
     </tbody>
 </table>
 
-<!-- huang2025ai -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<!-- lam2025codecrash -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,safety,code">
     <tbody>
         <tr>
 
             <td width="33%" valign="center" align="center">
                 <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2025ai.png" width="100%">
+                    <img src="images/publications/lam2025codecrash.png" width="100%">
                 </div>
             </td>
 
             <td width="67%" valign="top">
                 <p>
-                    <heading>AI Sees Your Location—But With A Bias Toward The Wealthy World</heading><br>
-                    Jingyuan Huang, <b>Jen-tse Huang</b>, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang, Jieyu Zhao<br>
-                    EMNLP Main, 2025<br>
-                    | <a href="https://arxiv.org/abs/2502.11163">arXiv</a> |
-                    <a href="https://github.com/uscnlp-lime/FairLocator">code</a> |
+                    <heading>CodeCrash: Stress-Testing LLM Code Reasoning under Misleading Natural Language Perturbations</heading><br>
+                    Man Ho Lam, Chaozheng Wang <i class="fa-solid fa-envelope"></i>, <b>Jen-tse Huang</b>, Michael R. Lyu<br>
+                    NeurIPS, 2025<br>
+                    | <a href="https://arxiv.org/abs/2504.14119">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/CodeCrash">code</a> |
+                    <a href="https://cuhk-arise.github.io/CodeCrash/">homepage</a> |
                 </p>
             </td>
 
@@ -183,7 +192,7 @@
 </table>
 
 <!-- huang2025visbias -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="co-first" data-topics="llm,vlm,evaluation,fairness">
     <tbody>
         <tr>
 
@@ -196,7 +205,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models</heading><br>
-                    <b>Jen-tse Huang</b>, Jiantong Qin, Jianping Zhang, Youliang Yuan, Wenxuan Wang, Jieyu Zhao<br>
+                    <b>Jen-tse Huang <i class="fa-solid fa-star-of-life"></i></b>, Jiantong Qin <i class="fa-solid fa-star-of-life"></i>, Jianping Zhang, Youliang Yuan, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Jieyu Zhao <i class="fa-solid fa-envelope"></i><br>
                     EMNLP Main, 2025<br>
                     | <a href="https://arxiv.org/abs/2503.07575">arXiv</a> |
                     <a href="https://github.com/uscnlp-lime/VisBias">code</a> |
@@ -207,8 +216,58 @@
     </tbody>
 </table>
 
+<!-- huang2025ai -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="co-first" data-topics="llm,vlm,evaluation,fairness">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2025ai.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <heading>AI Sees Your Location—But With A Bias Toward The Wealthy World</heading><br>
+                    Jingyuan Huang <i class="fa-solid fa-star-of-life"></i>, <b>Jen-tse Huang <i class="fa-solid fa-star-of-life"></i></b>, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Jieyu Zhao <i class="fa-solid fa-envelope"></i><br>
+                    EMNLP Main, 2025<br>
+                    | <a href="https://arxiv.org/abs/2502.11163">arXiv</a> |
+                    <a href="https://github.com/uscnlp-lime/FairLocator">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2025fact -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,t2i,evaluation,fairness">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2025fact.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <heading>Where Fact Ends and Fairness Begins: Redefining AI Bias Evaluation through Cognitive Biases </heading><br>
+                    <b>Jen-tse Huang</b>, Yuhang Yan <i class="fa-solid fa-star-of-life"></i>, Linqi Liu <i class="fa-solid fa-star-of-life"></i>, Yixin Wan, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Kai-Wei Chang, Michael R. Lyu<br>
+                    EMNLP Findings, 2025<br>
+                    | <a href="https://arxiv.org/abs/2502.05849">arXiv</a> |
+                    <a href="https://github.com/uclanlp/Fact-or-Fair">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- wang2025learning -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="corresponding" data-topics="llm,agent">
     <tbody>
         <tr>
 
@@ -221,7 +280,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>Learning to Ask: When LLM Agents Meet Unclear Instruction</heading><br>
-                    Wenxuan Wang, Juluan Shi, Zixuan Ling, Yuk-Kit Chan, Chaozheng Wang, Cheryl Lee, Youliang Yuan, <b>Jen-tse Huang</b>, Wenxiang Jiao, Michael R. Lyu<br>
+                    Wenxuan Wang, Juluan Shi <i class="fa-solid fa-star-of-life"></i>, Zixuan Ling <i class="fa-solid fa-star-of-life"></i>, Yuk-Kit Chan <i class="fa-solid fa-star-of-life"></i>, Chaozheng Wang, Cheryl Lee, Youliang Yuan, <b>Jen-tse Huang <i class="fa-solid fa-envelope"></i></b>, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
                     EMNLP Main, 2025<br>
                     | <a href="https://arxiv.org/abs/2409.00557">arXiv</a> |
                 </p>
@@ -232,7 +291,7 @@
 </table>
 
 <!-- lee2025unidebugger -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,agent,code">
     <tbody>
         <tr>
 
@@ -256,757 +315,8 @@
     </tbody>
 </table>
 
-<!-- huang2025fact -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2025fact.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <heading>Where Fact Ends and Fairness Begins: Redefining AI Bias Evaluation through Cognitive Biases </heading><br>
-                    <b>Jen-tse Huang</b>, Yuhang Yan, Linqi Liu, Yixin Wan, Wenxuan Wang, Kai-Wei Chang, Michael R. Lyu<br>
-                    EMNLP Findings, 2025<br>
-                    | <a href="https://arxiv.org/abs/2502.05849">arXiv</a> |
-                    <a href="https://github.com/uclanlp/Fact-or-Fair">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- yuan2025refuse -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/yuan2025refuse.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2025.acl-long.158/" id="yuan2025refuse">
-                        <heading>Refuse Whenever You Feel Unsafe: Improving Safety in LLMs via Decoupled Refusal Training</heading>
-                    </a><br>
-                    Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, <b>Jen-tse Huang</b>, Jiahao Xu, Tian Liang, Pinjia He, Zhaopeng Tu<br>
-                    ACL Main, 2025<br>
-                    | <a href="https://arxiv.org/abs/2407.09121">arXiv</a> |
-                    <a href="https://github.com/RobustNLP/DeRTa">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-
-<!-- wang2025see -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2025see.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2025.acl-long.832/" id="wang2025see">
-                        <heading>Can’t See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for Multimodal LLMs</heading>
-                    </a><br>
-                    Wenxuan Wang, Xiaoyuan Liu, Kuiyi Gao, <b>Jen-tse Huang</b>, Youliang Yuan, Pinjia He, Shuai Wang, Zhaopeng Tu<br>
-                    ACL Main, 2025<br>
-                    | <a href="https://arxiv.org/abs/2502.11184">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- liu2025insight -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/liu2025insight.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2025.acl-long.872/" id="liu2025insight">
-                        <heading>Insight Over Sight: Exploring the Vision-Knowledge Conflicts in Multimodal LLMs</heading>
-                    </a><br>
-                    Xiaoyuan Liu, Wenxuan Wang, Youliang Yuan, <b>Jen-tse Huang</b>, Qiuzhi Liu, Pinjia He, Zhaopeng Tu<br>
-                    ACL Main, 2025<br>
-                    | <a href="https://arxiv.org/abs/2410.08145">arXiv</a> |
-                    <a href="https://github.com/xyliu-cs/ConflictVIS">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2025chain -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2025chain.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2025.findings-acl.571/" id="wang2025chain">
-                        <heading>Chain-of-Jailbreak Attack for Image Generation Models via Step by Step Editing</heading>
-                    </a><br>
-                    Wenxuan Wang, Kuiyi Gao, Youliang Yuan, <b>Jen-tse Huang</b>, Qiuzhi Liu, Shuai Wang, Wenxiang Jiao, Zhaopeng Tu<br>
-                    ACL Findings, 2025<br>
-                    | <a href="https://arxiv.org/abs/2410.03869">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2025resilience -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2025resilience.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://icml.cc/virtual/2025/poster/44721" id="huang2025resilience">
-                        <heading>On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents</heading></heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Jiaxu Zhou, Tailin Jin, Xuhui Zhou, Zixi Chen, Wenxuan Wang, Youliang Yuan, Michael R. Lyu, Maarten Sap<br>
-                    ICML, 2025<br>
-                    | <a href="https://arxiv.org/abs/2408.00989">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/MAS-Resilience">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2025coser -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2025coser.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://icml.cc/virtual/2025/poster/46115" id="wang2025coser">
-                        <heading>CoSER: Coordinating LLM-Based Persona Simulation of Established Roles</heading></heading>
-                    </a><br>
-                    Xintao Wang, Heng Wang, Yifei Zhang, Xinfeng Yuan, Rui Xu, <b>Jen-tse Huang</b>, Siyu Yuan, Haoran Guo, Jiangjie Chen, Shuchang Zhou, Wei Wang, Yanghua Xiao<br>
-                    ICML, 2025<br>
-                    | <a href="https://arxiv.org/abs/2502.09082">arXiv</a> |
-                    <a href="https://github.com/Neph0s/CoSER">code</a> |
-                    <a href="https://huggingface.co/papers/2502.09082">huggingface</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- zhou2025sotopia -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/zhou2025sotopia.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2025.naacl-demo.30/" id="zhou2025sotopia">
-                        <heading>SOTOPIA-S4: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation</heading>
-                    </a><br>
-                    Xuhui Zhou, Zhe Su, Sophie Feng, Jiaxu Zhou, <b>Jen-tse Huang</b>, Hsien-Te Kao, Spencer Lynch, Svitlana Volkova, Tongshuang Sherry Wu, Anita Woolley, Hao Zhu, Maarten Sap<br>
-                    NAACL Demo Track, 2025<br>
-                    | <a href="https://www.arxiv.org/abs/2504.16122">arXiv</a> |
-                    <a href="https://github.com/sotopia-lab/sotopia">code</a> |
-                    <a href="https://demo.sotopia.world/">homepage</a> |
-                    <a href="https://youtu.be/dZq9tNqerks">demo</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2025competing -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2025competing.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://iclr.cc/virtual/2025/poster/30468" id="huang2025competing">
-                        <heading>Competing Large Language Models in Multi-Agent Gaming Environments</heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Eric John Li, Man Ho Lam, Tian Liang, Wenxuan Wang, Youliang Yuan, Wenxiang Jiao, Xing Wang, Zhaopeng Tu, Michael R. Lyu<br>
-                    ICLR, 2025<br>
-                    | <a href="https://arxiv.org/abs/2403.11807">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/GAMABench">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2024apathetic -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2024apathetic.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://neurips.cc/virtual/2024/poster/93520" id="huang2024apathetic">
-                        <heading>Apathetic or Empathetic? Evaluating LLMs' Emotional Alignments with Humans</heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Man Ho Lam, Eric John Li, Shujie Ren, Wenxuan Wang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu<br>
-                    NeurIPS, 2024<br>
-                    | <a href="https://arxiv.org/abs/2308.03656">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/EmotionBench">code</a> |
-                    <a href="https://huggingface.co/datasets/CUHK-ARISE/EmotionBench">dataset</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2024reliability -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2024reliability.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.emnlp-main.354/" id="huang2024reliability">
-                        <heading>On the Reliability of Psychological Scales on Large Language Models</heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Wenxiang Jiao, Man Ho Lam, Eric John Li, Wenxuan Wang, Michael R. Lyu<br>
-                    EMNLP Main, 2024<br>
-                    | <a href="https://arxiv.org/abs/2305.19926">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/LLMPersonality">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- liu2024interintent -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/liu2024interintent.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.emnlp-main.383/" id="liu2024interintent">
-                        <heading>InterIntent: Investigating Social Intelligence of LLMs via Intention Understanding in an Interactive Game Context</heading>
-                    </a><br>
-                    Ziyi Liu, Abhishek Anand, Pei Zhou, <b>Jen-tse Huang</b>, Jieyu Zhao<br>
-                    EMNLP Main, 2024<br>
-                    | <a href="https://arxiv.org/abs/2406.12203">arXiv</a> |
-                    <a href="https://github.com/uscnlp-lime/inter-intent">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wan2024logicasker -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wan2024logicasker.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.emnlp-main.128/" id="wan2024logicasker">
-                        <heading>LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models</heading>
-                    </a><br>
-                    Yuxuan Wan, Wenxuan Wang, Yiliu Yang, Youliang Yuan, <b>Jen-tse Huang</b>, Pinjia He, Wenxiang Jiao, Michael R. Lyu<br>
-                    EMNLP Main, 2024<br>
-                    | <a href="https://arxiv.org/abs/2401.00757">arXiv</a> |
-                    <a href="https://github.com/yxwan123/LogicAsker">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2024new -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2024new.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://dl.acm.org/doi/10.1145/3664647.3681433" id="wang2024new">
-                        <heading>New Job, New Gender? Measuring the Social Bias in Image Generation Models</heading>
-                    </a><br>
-                    Wenxuan Wang, Haonan Bai, <b>Jen-tse Huang</b>, Yuxuan Wan, Youliang Yuan, Haoyi Qiu, Nanyun Peng, Michael R. Lyu<br>
-                    <font color="red"><b>[Oral 174/4385 3.97%]</b></font> ACMMM, 2024<br>
-                    | <a href="https://arxiv.org/abs/2401.00763">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2024countries -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2024countries.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.acl-long.345/" id="wang2024countries">
-                        <heading>Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models</heading>
-                    </a><br>
-                    Wenxuan Wang, Wenxiang Jiao, Jingyuan Huang, Ruyi Dai, <b>Jen-tse Huang</b>, Zhaopeng Tu, Michael R. Lyu<br>
-                    ACL Main, 2024<br>
-                    | <a href="https://arxiv.org/abs/2310.12481">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2024incharacter -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2024incharacter.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.acl-long.102/" id="wang2024incharacter">
-                        <heading>InCharacter: Evaluating Personality Fidelity in Role-Playing Agents through Psychological Interviews</heading>
-                    </a><br>
-                    Xintao Wang, Yunze Xiao, <b>Jen-tse Huang</b>, Siyu Yuan, Rui Xu, Haoran Guo, Quan Tu, Yaying Fei, Ziang Leng, Wei Wang, Jiangjie Chen, Cheng Li, Yanghua Xiao<br>
-                    ACL Main, 2024<br>
-                    | <a href="https://arxiv.org/abs/2310.17976">arXiv</a> |
-                    <a href="https://github.com/Neph0s/InCharacter">code</a> |
-                    <a href="https://incharacter.github.io/">homepage</a> |
-                    <a href="https://incharacter.theirstory.cn/">demo</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2024languages -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2024languages.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2024.findings-acl.349/" id="wang2024languages">
-                        <heading>All Languages Matter: On the Multilingual Safety of LLMs</heading>
-                    </a><br>
-                    Wenxuan Wang, Zhaopeng Tu, Chang Chen, Youliang Yuan, <b>Jen-tse Huang</b>, Wenxiang Jiao, Michael R. Lyu<br>
-                    ACL Findings, 2024<br>
-                    | <a href="https://arxiv.org/abs/2310.00905">arXiv</a> |
-                    <a href="https://github.com/Jarviswang94/Multilingual_safety_benchmark">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2024humanity -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2024humanity.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://iclr.cc/virtual/2024/poster/19008" id="huang2024humanity">
-                        <heading>On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs</heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Wenxuan Wang, Eric John Li, Man Ho Lam, Shujie Ren, Youliang Yuan, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu<br>
-                    <font color="red"><b>[Oral 86/7404 1.16%]</b></font> ICLR, 2024<br>
-                    | <a href="https://arxiv.org/abs/2310.01386">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/PsychoBench">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- yuan2024gpt -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/yuan2024gpt.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://iclr.cc/virtual/2024/poster/18817" id="yuan2024gpt">
-                        <heading>GPT-4 Is Too Smart To Be Safe: Stealthy Chat with LLMs via Cipher</heading>
-                    </a><br>
-                    Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, <b>Jen-tse Huang</b>, Pinjia He, Shuming Shi, Zhaopeng Tu<br>
-                    ICLR, 2024<br>
-                    | <a href="https://arxiv.org/abs/2308.06463">arXiv</a> |
-                    <a href="https://github.com/RobustNLP/CipherChat">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- jiao2023parrot -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/jiao2023parrot.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2023.findings-emnlp.1001/" id="jiao2023parrot">
-                        <heading>ParroT: Translating during Chat using Large Language Models tuned with Human Translation and Feedback</heading>
-                    </a><br>
-                    Wenxiang Jiao, <b>Jen-tse Huang</b>, Wenxuan Wang, Zhiwei He, Tian Liang, Xing Wang, Shuming Shi, Zhaopeng Tu<br>
-                    EMNLP Findings, 2023<br>
-                    | <a href="https://arxiv.org/abs/2304.02426">arXiv</a> |
-                    <a href="https://github.com/wxjiao/ParroT">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2023image -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2023image.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://ieeexplore.ieee.org/document/10298324" id="wang2023image">
-                        <heading>An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software</heading>
-                    </a><br>
-                    Wenxuan Wang, Jingyuan Huang, <b>Jen-tse Huang</b>, Chang Chen, Jiazhen Gu, Pinjia He, Michael R. Lyu<br>
-                    ASE, 2023<br>
-                    | <a href="https://arxiv.org/abs/2308.09810">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- zhang2023improving -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/zhang2023improving.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Improving_the_Transferability_of_Adversarial_Samples_by_Path-Augmented_Method_CVPR_2023_paper.html" id="zhang2023improving">
-                        <heading>Improving the Transferability of Adversarial Samples by Path-Augmented Method</heading>
-                    </a><br>
-                    Jianping Zhang, <b>Jen-tse Huang</b>, Wenxuan Wang, Yichen Li, Weibin Wu, Xiaosen Wang, Yuxin Su, Michael R. Lyu<br>
-                    CVPR, 2023<br>
-                    | <a href="https://arxiv.org/abs/2303.15735">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2023mttm -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2023mttm.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://dl.acm.org/doi/10.1109/ICSE48619.2023.00200" id="wang2023mttm">
-                        <heading>MTTM: Metamorphic Testing for Textual Content Moderation Software</heading>
-                    </a><br>
-                    Wenxuan Wang, <b>Jen-tse Huang</b>, Weibin Wu, Jianping Zhang, Yizhan Huang, Shuqing Li, Pinjia He, Michael R. Lyu<br>
-                    ICSE, 2023<br>
-                    | <a href="https://arxiv.org/abs/2302.05706">arXiv</a> |
-                    <a href="https://github.com/Jarviswang94/MTTM">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- jiao2022tencent -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/jiao2022tencent.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://aclanthology.org/2022.wmt-1.102/" id="jiao2022tencent">
-                        <heading>Tencent’s Multilingual Machine Translation System for WMT22 Large-Scale African Languages</heading>
-                    </a><br>
-                    Wenxiang Jiao, Zhaopeng Tu, Jiarui Li, Wenxuan Wang, <b>Jen-tse Huang</b>, Shuming Shi<br>
-                    WMT, 2022<br>
-                    | <a href="https://arxiv.org/abs/2210.09644">arXiv</a> |
-                    <a href="https://github.com/wxjiao/WMT2022-Large-Scale-African">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- huang2022aeon -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2022aeon.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://dl.acm.org/doi/10.1145/3533767.3534394" id="huang2022aeon">
-                        <heading>AEON: A Method for Automatic Evaluation of NLP Test Cases</heading>
-                    </a><br>
-                    <b>Jen-tse Huang</b>, Jianping Zhang, Wenxuan Wang, Pinjia He, Yuxin Su, Michael R. Lyu<br>
-                    ISSTA, 2022<br>
-                    | <a href="https://arxiv.org/abs/2205.06439">arXiv</a> |
-                    <a href="https://github.com/CUHK-ARISE/AEON">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- zhang2022improving -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/zhang2022improving.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Improving_Adversarial_Transferability_via_Neuron_Attribution-Based_Attacks_CVPR_2022_paper.html" id="zhang2022improving">
-                        <heading>Improving Adversarial Transferability via Neuron Attribution-Based Attacks</heading>
-                    </a><br>
-                    Jianping Zhang, Weibin Wu, <b>Jen-tse Huang</b>, Yizhan Huang, Wenxuan Wang, Yuxin Su, Michael R. Lyu<br>
-                    CVPR, 2022<br>
-                    | <a href="https://arxiv.org/abs/2204.00008">arXiv</a> |
-                    <a href="https://github.com/jpzhang1810/NAA">code</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-    <tbody>
-        <tr>
-            <td>
-                <sectionheading>&nbsp;&nbsp;Journal</sectionheading>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- wang2025shortcut -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-    <tbody>
-        <tr>
-
-            <td width="33%" valign="center" align="center">
-                <div class="hidden" style="display: inline;">
-                    <img src="images/publications/wang2025shortcut.png" width="100%">
-                </div>
-            </td>
-
-            <td width="67%" valign="top">
-                <p>
-                    <a href="https://doi.org/10.1016/j.neucom.2024.128833" id="wang2025shortcut">
-                        <heading>On the Shortcut Learning in Multilingual Neural Machine Translation</heading>
-                    </a><br>
-                    Wenxuan Wang, Wenxiang Jiao, <b>Jen-tse Huang</b>, Zhaopeng Tu, Michael R. Lyu<br>
-                    Neurocomputing, 2025<br>
-                    | <a href="https://arxiv.org/abs/2411.10581">arXiv</a> |
-                </p>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
-
-<!-- preprint -->
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-    <tbody>
-        <tr>
-            <td>
-                <sectionheading>&nbsp;&nbsp;Preprint</sectionheading>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 <!-- zhou2025pimmur -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="co-first" data-topics="llm,evaluation,socsim">
     <tbody>
         <tr>
 
@@ -1019,7 +329,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies</heading><br>
-                    Jiaxu Zhou, <b>Jen-tse Huang</b>, Xuhui Zhou, Man Ho Lam, Xintao Wang, Hao Zhu, Wenxuan Wang, Maarten Sap<br>
+                    Jiaxu Zhou <i class="fa-solid fa-star-of-life"></i>, <b>Jen-tse Huang <i class="fa-solid fa-star-of-life"></i></b>, Xuhui Zhou, Man Ho Lam, Xintao Wang, Hao Zhu, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Maarten Sap <i class="fa-solid fa-envelope"></i><br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2509.18052">arXiv</a> |
                 </p>
@@ -1030,7 +340,7 @@
 </table>
 
 <!-- shi2025fairgamer -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,fairness">
     <tbody>
         <tr>
 
@@ -1054,21 +364,207 @@
     </tbody>
 </table>
 
-<!-- chen2025survey -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<!-- wang2025diversity -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,training">
     <tbody>
         <tr>
 
             <td width="33%" valign="center" align="center">
                 <div class="hidden" style="display: inline;">
-                    <img src="images/publications/chen2025survey.png" width="100%">
+                    <img src="images/publications/wang2025diversity.png" width="100%">
                 </div>
             </td>
 
             <td width="67%" valign="top">
                 <p>
-                    <heading>A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?</heading><br>
-                    Ada Chen, Yongjiang Wu, Junyuan Zhang, Shu Yang, <b>Jen-tse Huang</b>, Kun Wang, Wenxuan Wang, Shuai Wang<br>
+                    <heading>Diversity-Enhanced Reasoning for Subjective Questions</heading><br>
+                    Yumeng Wang <i class="fa-solid fa-star-of-life"></i>, Zhiyuan Fan <i class="fa-solid fa-star-of-life"></i>, Jiayu Liu <i class="fa-solid fa-star-of-life"></i>, <b>Jen-tse Huang</b>, Yi R. Fung <i class="fa-solid fa-envelope"></i><br>
+                    arXiv, 2025<br>
+                    | <a href="https://arxiv.org/abs/2507.20187">arXiv</a> |
+                    <a href="https://github.com/toward-agi/diverse-o1">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2025see -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2025see.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2025.acl-long.832/" id="wang2025see">
+                        <heading>Can't See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for Multimodal LLMs</heading>
+                    </a><br>
+                    Wenxuan Wang, Xiaoyuan Liu, Kuiyi Gao, <b>Jen-tse Huang</b>, Youliang Yuan, Pinjia He, Shuai Wang, Zhaopeng Tu <i class="fa-solid fa-envelope"></i><br>
+                    ACL Main, 2025<br>
+                    | <a href="https://arxiv.org/abs/2502.11184">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- liu2025insight -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/liu2025insight.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2025.acl-long.872/" id="liu2025insight">
+                        <heading>Insight Over Sight: Exploring the Vision-Knowledge Conflicts in Multimodal LLMs</heading>
+                    </a><br>
+                    Xiaoyuan Liu, Wenxuan Wang, Youliang Yuan, <b>Jen-tse Huang</b>, Qiuzhi Liu, Pinjia He <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu<br>
+                    ACL Main, 2025<br>
+                    | <a href="https://arxiv.org/abs/2410.08145">arXiv</a> |
+                    <a href="https://github.com/xyliu-cs/ConflictVIS">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2025chain -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="t2i,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2025chain.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2025.findings-acl.571/" id="wang2025chain">
+                        <heading>Chain-of-Jailbreak Attack for Image Generation Models via Step by Step Editing</heading>
+                    </a><br>
+                    Wenxuan Wang, Kuiyi Gao, Youliang Yuan, <b>Jen-tse Huang</b>, Qiuzhi Liu, Shuai Wang, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu <i class="fa-solid fa-envelope"></i><br>
+                    ACL Findings, 2025<br>
+                    | <a href="https://arxiv.org/abs/2410.03869">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- yuan2025refuse -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,training,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/yuan2025refuse.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2025.acl-long.158/" id="yuan2025refuse">
+                        <heading>Refuse Whenever You Feel Unsafe: Improving Safety in LLMs via Decoupled Refusal Training</heading>
+                    </a><br>
+                    Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, <b>Jen-tse Huang</b>, Jiahao Xu, Tian Liang, Pinjia He <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu<br>
+                    ACL Main, 2025<br>
+                    | <a href="https://arxiv.org/abs/2407.09121">arXiv</a> |
+                    <a href="https://github.com/RobustNLP/DeRTa">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2025resilience -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,evaluation,socsim,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2025resilience.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://icml.cc/virtual/2025/poster/44721" id="huang2025resilience">
+                        <heading>On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents</heading></heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Jiaxu Zhou, Tailin Jin, Xuhui Zhou, Zixi Chen, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Youliang Yuan, Michael R. Lyu, Maarten Sap <i class="fa-solid fa-envelope"></i><br>
+                    ICML, 2025<br>
+                    | <a href="https://arxiv.org/abs/2408.00989">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/MAS-Resilience">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2025coser -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,training,role-play">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2025coser.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://icml.cc/virtual/2025/poster/46115" id="wang2025coser">
+                        <heading>CoSER: Coordinating LLM-Based Persona Simulation of Established Roles</heading></heading>
+                    </a><br>
+                    Xintao Wang, Heng Wang, Yifei Zhang, Xinfeng Yuan, Rui Xu, <b>Jen-tse Huang</b>, Siyu Yuan, Haoran Guo, Jiangjie Chen, Shuchang Zhou, Wei Wang, Yanghua Xiao <i class="fa-solid fa-envelope"></i><br>
+                    ICML, 2025<br>
+                    | <a href="https://arxiv.org/abs/2502.09082">arXiv</a> |
+                    <a href="https://github.com/Neph0s/CoSER">code</a> |
+                    <a href="https://huggingface.co/papers/2502.09082">huggingface</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- chen2025jarvis -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,survey,agent,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/chen2025jarvis.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <heading>JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents</heading><br>
+                    Ada Chen <i class="fa-solid fa-star-of-life"></i>, Yongjiang Wu <i class="fa-solid fa-star-of-life"></i>, Junyuan Zhang <i class="fa-solid fa-star-of-life"></i>, Jingyu Xiao, Shu Yang, <b>Jen-tse Huang</b>, Kun Wang, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Shuai Wang<br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2505.10924">arXiv</a> |
                 </p>
@@ -1078,21 +574,21 @@
     </tbody>
 </table>
 
-<!-- huang2025llms -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<!-- huang2025language -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first,corresponding" data-topics="llm,evaluation,cogpsy">
     <tbody>
         <tr>
 
             <td width="33%" valign="center" align="center">
                 <div class="hidden" style="display: inline;">
-                    <img src="images/publications/huang2025llms.png" width="100%">
+                    <img src="images/publications/huang2025language.png" width="100%">
                 </div>
             </td>
 
             <td width="67%" valign="top">
                 <p>
-                    <heading>LLMs Do Not Have Human-Like Working Memory</heading><br>
-                    <b>Jen-tse Huang</b>, Kaiser Sun, Wenxuan Wang, Mark Dredze<br>
+                    <heading>Language Models Do Not Have Human-Like Working Memory</heading><br>
+                    <b>Jen-tse Huang <i class="fa-solid fa-envelope"></i></b>, Kaiser Sun, Wenxuan Wang, Mark Dredze<br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2505.10571">arXiv</a> |
                     <a href="https://github.com/penguinnnnn/LLM-Working-Memory">code</a> |
@@ -1103,8 +599,64 @@
     </tbody>
 </table>
 
+<!-- zhou2025sotopia -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,socsim">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/zhou2025sotopia.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2025.naacl-demo.30/" id="zhou2025sotopia">
+                        <heading>SOTOPIA-S4: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation</heading>
+                    </a><br>
+                    Xuhui Zhou <i class="fa-solid fa-star-of-life"></i>, Zhe Su <i class="fa-solid fa-star-of-life"></i>, Sophie Feng, Jiaxu Zhou, <b>Jen-tse Huang</b>, Hsien-Te Kao, Spencer Lynch, Svitlana Volkova, Tongshuang Wu, Anita Woolley, Hao Zhu, Maarten Sap<br>
+                    NAACL Demo Track, 2025<br>
+                    | <a href="https://www.arxiv.org/abs/2504.16122">arXiv</a> |
+                    <a href="https://github.com/sotopia-lab/sotopia">code</a> |
+                    <a href="https://demo.sotopia.world/">homepage</a> |
+                    <a href="https://youtu.be/dZq9tNqerks">demo</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2025competing -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,evaluation,socsim">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2025competing.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://iclr.cc/virtual/2025/poster/30468" id="huang2025competing">
+                        <heading>Competing Large Language Models in Multi-Agent Gaming Environments</heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Eric John Li, Man Ho Lam, Tian Liang, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Youliang Yuan, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Xing Wang, Zhaopeng Tu, Michael R. Lyu<br>
+                    ICLR, 2025<br>
+                    | <a href="https://arxiv.org/abs/2403.11807">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/GAMABench">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- wang2025comprehensive -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,survey,agent,safety">
     <tbody>
         <tr>
 
@@ -1117,7 +669,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment</heading><br>
-                    Kun Wang, Guibin Zhang, Zhenhong Zhou, Jiahao Wu, ..., <b>Jen-tse Huang</b>, ..., Dacheng Tao, Philip S. Yu, Qingsong Wen, Yang Liu<br>
+                    Kun Wang <i class="fa-solid fa-star-of-life"></i>, Guibin Zhang <i class="fa-solid fa-star-of-life"></i>, Zhenhong Zhou <i class="fa-solid fa-envelope"></i>, Jiahao Wu <i class="fa-solid fa-envelope"></i>, ..., <b>Jen-tse Huang</b>, ..., Dacheng Tao, Philip S. Yu, Qingsong Wen, Yang Liu<br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2504.15585">arXiv</a> |
                 </p>
@@ -1128,7 +680,7 @@
 </table>
 
 <!-- li2025biasinspector -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,agent,fairness">
     <tbody>
         <tr>
 
@@ -1153,7 +705,7 @@
 </table>
 
 <!-- liu2025llms -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,socsim">
     <tbody>
         <tr>
 
@@ -1178,7 +730,7 @@
 </table>
 
 <!-- zhang2025pre -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,vlm,training">
     <tbody>
         <tr>
 
@@ -1191,7 +743,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>Will Pre-Training Ever End? A First Step Toward Next-Generation Foundation MLLMs via Self-Improving Systematic Cognition</heading><br>
-                    Xiaoying Zhang, Da Peng, Yipeng Zhang, Zonghao Guo, Chengyue Wu, <b>Jen-tse Huang</b>, Chi Chen, Wei Ke, Helen Meng, Maosong Sun<br>
+                    Xiaoying Zhang <i class="fa-solid fa-envelope"></i>, Da Peng, Yipeng Zhang, Zonghao Guo <i class="fa-solid fa-envelope"></i>, Chengyue Wu, <b>Jen-tse Huang</b>, Chi Chen, Wei Ke, Helen Meng <i class="fa-solid fa-envelope"></i>, Maosong Sun<br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2503.12303">arXiv</a> |
                     <a href="https://github.com/thunlp/SICOG">code</a> |
@@ -1203,7 +755,7 @@
 </table>
 
 <!-- huang2025human -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,vlm,evaluation,cogpsy">
     <tbody>
         <tr>
 
@@ -1216,7 +768,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>Human Cognitive Benchmarks Reveal Foundational Visual Gaps in MLLMs</heading><br>
-                    <b>Jen-tse Huang</b>, Dasen Dai, Jen-yuan Huang, Youliang Yuan, Xiaoyuan Liu, Wenxuan Wang, Wenxiang Jiao, Pinjia He, Zhaopeng Tu, Haodong Duan<br>
+                    <b>Jen-tse Huang</b>, Dasen Dai, Jen-yuan Huang, Youliang Yuan, Xiaoyuan Liu, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Wenxiang Jiao, Pinjia He, Zhaopeng Tu, Haodong Duan <i class="fa-solid fa-envelope"></i><br>
                     arXiv, 2025<br>
                     | <a href="https://arxiv.org/abs/2502.16435">arXiv</a> |
                     <a href="https://github.com/CUHK-ARISE/VisFactor">code</a> |
@@ -1227,8 +779,34 @@
     </tbody>
 </table>
 
+<!-- wang2025shortcut -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="evaluation,translation">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2025shortcut.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://doi.org/10.1016/j.neucom.2024.128833" id="wang2025shortcut">
+                        <heading>On the Shortcut Learning in Multilingual Neural Machine Translation</heading>
+                    </a><br>
+                    Wenxuan Wang, Wenxiang Jiao, <b>Jen-tse Huang</b>, Zhaopeng Tu <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
+                    Neurocomputing, 2025<br>
+                    | <a href="https://arxiv.org/abs/2411.10581">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- du2025faircoder -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,fairness,code">
     <tbody>
         <tr>
 
@@ -1252,8 +830,153 @@
     </tbody>
 </table>
 
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <sectionheading>&nbsp;&nbsp;2024</sectionheading>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2024apathetic -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,evaluation,cogpsy">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2024apathetic.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://neurips.cc/virtual/2024/poster/93520" id="huang2024apathetic">
+                        <heading>Apathetic or Empathetic? Evaluating LLMs' Emotional Alignments with Humans</heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Man Ho Lam, Eric John Li, Shujie Ren, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu, Michael R. Lyu<br>
+                    NeurIPS, 2024<br>
+                    | <a href="https://arxiv.org/abs/2308.03656">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/EmotionBench">code</a> |
+                    <a href="https://huggingface.co/datasets/CUHK-ARISE/EmotionBench">dataset</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- liu2024interintent -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,socsim">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/liu2024interintent.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.emnlp-main.383/" id="liu2024interintent">
+                        <heading>InterIntent: Investigating Social Intelligence of LLMs via Intention Understanding in an Interactive Game Context</heading>
+                    </a><br>
+                    Ziyi Liu <i class="fa-solid fa-star-of-life"></i>, Abhishek Anand <i class="fa-solid fa-star-of-life"></i>, Pei Zhou, <b>Jen-tse Huang</b>, Jieyu Zhao<br>
+                    EMNLP Main, 2024<br>
+                    | <a href="https://arxiv.org/abs/2406.12203">arXiv</a> |
+                    <a href="https://github.com/uscnlp-lime/inter-intent">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wan2024logicasker -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wan2024logicasker.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.emnlp-main.128/" id="wan2024logicasker">
+                        <heading>LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models</heading>
+                    </a><br>
+                    Yuxuan Wan <i class="fa-solid fa-star-of-life"></i>, Wenxuan Wang <i class="fa-solid fa-star-of-life"></i>, Yiliu Yang, Youliang Yuan, <b>Jen-tse Huang</b>, Pinjia He, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
+                    EMNLP Main, 2024<br>
+                    | <a href="https://arxiv.org/abs/2401.00757">arXiv</a> |
+                    <a href="https://github.com/yxwan123/LogicAsker">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2024reliability -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,evaluation,cogpsy">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2024reliability.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.emnlp-main.354/" id="huang2024reliability">
+                        <heading>On the Reliability of Psychological Scales on Large Language Models</heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Man Ho Lam, Eric John Li, Wenxuan Wang <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
+                    EMNLP Main, 2024<br>
+                    | <a href="https://arxiv.org/abs/2305.19926">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/LLMPersonality">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2024new -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="corresponding" data-topics="t2i,evaluation,fairness">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2024new.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://dl.acm.org/doi/10.1145/3664647.3681433" id="wang2024new">
+                        <heading>New Job, New Gender? Measuring the Social Bias in Image Generation Models</heading>
+                    </a><br>
+                    Wenxuan Wang, Haonan Bai, <b>Jen-tse Huang <i class="fa-solid fa-envelope"></i></b>, Yuxuan Wan, Youliang Yuan, Haoyi Qiu, Nanyun Peng, Michael R. Lyu<br>
+                    <font color="red"><b>[Oral 174/4385 3.97%]</b></font> ACMMM, 2024<br>
+                    | <a href="https://arxiv.org/abs/2401.00763">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- huang2024instantir -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="last" data-topics="t2i,training">
     <tbody>
         <tr>
 
@@ -1279,8 +1002,144 @@
     </tbody>
 </table>
 
+<!-- wang2024incharacter -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,role-play,cogpsy">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2024incharacter.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.acl-long.102/" id="wang2024incharacter">
+                        <heading>InCharacter: Evaluating Personality Fidelity in Role-Playing Agents through Psychological Interviews</heading>
+                    </a><br>
+                    Xintao Wang, Yunze Xiao, <b>Jen-tse Huang</b>, Siyu Yuan, Rui Xu, Haoran Guo, Quan Tu, Yaying Fei, Ziang Leng, Wei Wang, Jiangjie Chen, Cheng Li, Yanghua Xiao <i class="fa-solid fa-envelope"></i><br>
+                    ACL Main, 2024<br>
+                    | <a href="https://arxiv.org/abs/2310.17976">arXiv</a> |
+                    <a href="https://github.com/Neph0s/InCharacter">code</a> |
+                    <a href="https://incharacter.github.io/">homepage</a> |
+                    <a href="https://incharacter.theirstory.cn/">demo</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2024languages -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="corresponding" data-topics="llm,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2024languages.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.findings-acl.349/" id="wang2024languages">
+                        <heading>All Languages Matter: On the Multilingual Safety of LLMs</heading>
+                    </a><br>
+                    Wenxuan Wang, Zhaopeng Tu, Chang Chen, Youliang Yuan, <b>Jen-tse Huang <i class="fa-solid fa-envelope"></i></b>, Wenxiang Jiao, Michael R. Lyu<br>
+                    ACL Findings, 2024<br>
+                    | <a href="https://arxiv.org/abs/2310.00905">arXiv</a> |
+                    <a href="https://github.com/Jarviswang94/Multilingual_safety_benchmark">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2024countries -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,fairness">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2024countries.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2024.acl-long.345/" id="wang2024countries">
+                        <heading>Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models</heading>
+                    </a><br>
+                    Wenxuan Wang, Wenxiang Jiao, Jingyuan Huang, Ruyi Dai, <b>Jen-tse Huang</b>, Zhaopeng Tu <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
+                    ACL Main, 2024<br>
+                    | <a href="https://arxiv.org/abs/2310.12481">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2024humanity -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="llm,evaluation,cogpsy">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2024humanity.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://iclr.cc/virtual/2024/poster/19008" id="huang2024humanity">
+                        <heading>On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs</heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Wenxuan Wang, Eric John Li, Man Ho Lam, Shujie Ren, Youliang Yuan, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu, Michael R. Lyu<br>
+                    <font color="red"><b>[Oral 86/7404 1.16%]</b></font> ICLR, 2024<br>
+                    | <a href="https://arxiv.org/abs/2310.01386">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/PsychoBench">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- yuan2024gpt -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/yuan2024gpt.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://iclr.cc/virtual/2024/poster/18817" id="yuan2024gpt">
+                        <heading>GPT-4 Is Too Smart To Be Safe: Stealthy Chat with LLMs via Cipher</heading>
+                    </a><br>
+                    Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, <b>Jen-tse Huang</b>, Pinjia He <i class="fa-solid fa-envelope"></i>, Shuming Shi, Zhaopeng Tu<br>
+                    ICLR, 2024<br>
+                    | <a href="https://arxiv.org/abs/2308.06463">arXiv</a> |
+                    <a href="https://github.com/RobustNLP/CipherChat">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- ng2024well -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="corresponding" data-topics="llm,evaluation,role-play">
     <tbody>
         <tr>
 
@@ -1293,7 +1152,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>How Well Can LLMs Echo Us? Evaluating AI Chatbots' Role-Play Ability with ECHO</heading><br>
-                    Man Tik Ng, Hui Tung Tse, <b>Jen-tse Huang</b>, Jingjing Li, Wenxuan Wang, Michael R. Lyu<br>
+                    Man Tik Ng <i class="fa-solid fa-star-of-life"></i>, Hui Tung Tse <i class="fa-solid fa-star-of-life"></i>, <b>Jen-tse Huang <i class="fa-solid fa-envelope"></i></b>, Jingjing Li, Wenxuan Wang, Michael R. Lyu<br>
                     arXiv, 2024<br>
                     | <a href="https://arxiv.org/abs/2404.13957">arXiv</a> |
                     <a href="https://github.com/CUHK-ARISE/ECHO">code</a> |
@@ -1305,7 +1164,7 @@
 </table>
 
 <!-- wang2024earth -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,safety">
     <tbody>
         <tr>
 
@@ -1318,7 +1177,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>The Earth is Flat? Unveiling Factual Errors in Large Language Models</heading><br>
-                    Wenxuan Wang, Juluan Shi, Zhaopeng Tu, Youliang Yuan, <b>Jen-tse Huang</b>, Wenxiang Jiao, Michael R. Lyu<br>
+                    Wenxuan Wang <i class="fa-solid fa-star-of-life"></i>, Juluan Shi <i class="fa-solid fa-star-of-life"></i>, Zhaopeng Tu, Youliang Yuan, <b>Jen-tse Huang</b>, Wenxiang Jiao, Michael R. Lyu<br>
                     arXiv, 2024<br>
                     | <a href="https://arxiv.org/abs/2401.00761">arXiv</a> |
                 </p>
@@ -1328,8 +1187,45 @@
     </tbody>
 </table>
 
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <sectionheading>&nbsp;&nbsp;2023</sectionheading>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- jiao2023parrot -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,training,translation">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/jiao2023parrot.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2023.findings-emnlp.1001/" id="jiao2023parrot">
+                        <heading>ParroT: Translating during Chat using Large Language Models tuned with Human Translation and Feedback</heading>
+                    </a><br>
+                    Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, <b>Jen-tse Huang</b>, Wenxuan Wang, Zhiwei He, Tian Liang, Xing Wang, Shuming Shi, Zhaopeng Tu<br>
+                    EMNLP Findings, 2023<br>
+                    | <a href="https://arxiv.org/abs/2304.02426">arXiv</a> |
+                    <a href="https://github.com/wxjiao/ParroT">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- liang2023leveraging -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,socsim">
     <tbody>
         <tr>
 
@@ -1342,7 +1238,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>Leveraging Word Guessing Games to Assess the Intelligence of Large Language Models</heading><br>
-                    Tian Liang, Zhiwei He, <b>Jen-tse Huang</b>, Wenxuan Wang, Wenxiang Jiao, Rui Wang, Yujiu Yang, Zhaopeng Tu, Shuming Shi, Xing Wang<br>
+                    Tian Liang, Zhiwei He, <b>Jen-tse Huang</b>, Wenxuan Wang, Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Rui Wang, Yujiu Yang <i class="fa-solid fa-envelope"></i>, Zhaopeng Tu, Shuming Shi, Xing Wang <i class="fa-solid fa-envelope"></i><br>
                     arXiv, 2023<br>
                     | <a href="https://arxiv.org/abs/2310.20499">arXiv</a> |
                     <a href="https://github.com/Skytliang/SpyGame">code</a> |
@@ -1353,8 +1249,87 @@
     </tbody>
 </table>
 
+<!-- wang2023image -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2023image.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://dl.acm.org/doi/10.1109/ASE56229.2023.00189" id="wang2023image">
+                        <heading>An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software</heading>
+                    </a><br>
+                    Wenxuan Wang, Jingyuan Huang, <b>Jen-tse Huang</b>, Chang Chen, Jiazhen Gu <i class="fa-solid fa-envelope"></i>, Pinjia He, Michael R. Lyu<br>
+                    ASE, 2023<br>
+                    | <a href="https://arxiv.org/abs/2308.09810">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- zhang2023improving -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/zhang2023improving.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Improving_the_Transferability_of_Adversarial_Samples_by_Path-Augmented_Method_CVPR_2023_paper.html" id="zhang2023improving">
+                        <heading>Improving the Transferability of Adversarial Samples by Path-Augmented Method</heading>
+                    </a><br>
+                    Jianping Zhang, <b>Jen-tse Huang</b>, Wenxuan Wang, Yichen Li, Weibin Wu <i class="fa-solid fa-envelope"></i>, Xiaosen Wang, Yuxin Su, Michael R. Lyu<br>
+                    CVPR, 2023<br>
+                    | <a href="https://arxiv.org/abs/2303.15735">arXiv</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- wang2023mttm -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/wang2023mttm.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://dl.acm.org/doi/10.1109/ICSE48619.2023.00200" id="wang2023mttm">
+                        <heading>MTTM: Metamorphic Testing for Textual Content Moderation Software</heading>
+                    </a><br>
+                    Wenxuan Wang, <b>Jen-tse Huang</b>, Weibin Wu, Jianping Zhang, Yizhan Huang, Shuqing Li, Pinjia He <i class="fa-solid fa-envelope"></i>, Michael R. Lyu<br>
+                    ICSE, 2023<br>
+                    | <a href="https://arxiv.org/abs/2302.05706">arXiv</a> |
+                    <a href="https://github.com/Jarviswang94/MTTM">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
 <!-- jiao2023chatgpt -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,translation">
     <tbody>
         <tr>
 
@@ -1367,7 +1342,7 @@
             <td width="67%" valign="top">
                 <p>
                     <heading>Is ChatGPT A Good Translator? Yes With GPT-4 As The Engine</heading><br>
-                    Wenxiang Jiao, Wenxuan Wang, <b>Jen-tse Huang</b>, Xing Wang, Shuming Shi, Zhaopeng Tu<br>
+                    Wenxiang Jiao <i class="fa-solid fa-envelope"></i>, Wenxuan Wang, <b>Jen-tse Huang</b>, Xing Wang, Shuming Shi, Zhaopeng Tu<br>
                     arXiv, 2023<br>
                     | <a href="https://arxiv.org/abs/2301.08745">arXiv</a> |
                     <a href="https://github.com/wxjiao/Is-ChatGPT-A-Good-Translator">code</a> |
@@ -1378,6 +1353,262 @@
     </tbody>
 </table>
 
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <sectionheading>&nbsp;&nbsp;2022</sectionheading>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-</td></tr></table></body>
-</html>
+<!-- jiao2022tencent -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="training,translation">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/jiao2022tencent.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://aclanthology.org/2022.wmt-1.102/" id="jiao2022tencent">
+                        <heading>Tencent's Multilingual Machine Translation System for WMT22 Large-Scale African Languages</heading>
+                    </a><br>
+                    Wenxiang Jiao, Zhaopeng Tu, Jiarui Li, Wenxuan Wang, <b>Jen-tse Huang</b>, Shuming Shi<br>
+                    WMT, 2022<br>
+                    | <a href="https://arxiv.org/abs/2210.09644">arXiv</a> |
+                    <a href="https://github.com/wxjiao/WMT2022-Large-Scale-African">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- huang2022aeon -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="first" data-topics="evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/huang2022aeon.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://dl.acm.org/doi/10.1145/3533767.3534394" id="huang2022aeon">
+                        <heading>AEON: A Method for Automatic Evaluation of NLP Test Cases</heading>
+                    </a><br>
+                    <b>Jen-tse Huang</b>, Jianping Zhang, Wenxuan Wang, Pinjia He <i class="fa-solid fa-envelope"></i>, Yuxin Su, Michael R. Lyu<br>
+                    ISSTA, 2022<br>
+                    | <a href="https://arxiv.org/abs/2205.06439">arXiv</a> |
+                    <a href="https://github.com/CUHK-ARISE/AEON">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- zhang2022improving -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="evaluation,safety">
+    <tbody>
+        <tr>
+
+            <td width="33%" valign="center" align="center">
+                <div class="hidden" style="display: inline;">
+                    <img src="images/publications/zhang2022improving.png" width="100%">
+                </div>
+            </td>
+
+            <td width="67%" valign="top">
+                <p>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Zhang_Improving_Adversarial_Transferability_via_Neuron_Attribution-Based_Attacks_CVPR_2022_paper.html" id="zhang2022improving">
+                        <heading>Improving Adversarial Transferability via Neuron Attribution-Based Attacks</heading>
+                    </a><br>
+                    Jianping Zhang, Weibin Wu <i class="fa-solid fa-envelope"></i>, <b>Jen-tse Huang</b>, Yizhan Huang, Wenxuan Wang, Yuxin Su, Michael R. Lyu<br>
+                    CVPR, 2022<br>
+                    | <a href="https://arxiv.org/abs/2204.00008">arXiv</a> |
+                    <a href="https://github.com/jpzhang1810/NAA">code</a> |
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+</td></tr></tbody></table>
+
+  <script>
+  (function(){
+    /** Utils **/
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    // Normalize attr strings like "first,corresponding" or "fairness cogsci" -> Set([...])
+    const parseAttrList = (str) => {
+      if (!str) return new Set();
+      return new Set(
+        str
+          .split(/[\s,;|]+/)
+          .map(s => s.trim().toLowerCase())
+          .filter(Boolean)
+      );
+    };
+
+    // Read selections from a bar (returns {all: boolean, values: Set})
+    function readBarSelections(barName){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+      const allOn = chips.find(c => c.dataset.value === 'all')?.classList.contains('is-on');
+      const values = new Set(
+        chips
+          .filter(c => c.dataset.value !== 'all' && c.classList.contains('is-on'))
+          .map(c => c.dataset.value)
+      );
+      return { all: !!allOn, values };
+    }
+
+    // Write selections to a bar from a set of values
+    function setBarSelections(barName, values){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+
+      const allChip = chips.find(c => c.dataset.value === 'all');
+      const others = chips.filter(c => c.dataset.value !== 'all');
+
+      if (!values || values.size === 0 || values.has('all')){
+        // All mode
+        allChip.classList.add('is-on');
+        allChip.querySelector('input').checked = true;
+        others.forEach(ch => { ch.classList.remove('is-on'); ch.querySelector('input').checked = false; });
+      } else {
+        // Specific values
+        allChip.classList.remove('is-on');
+        allChip.querySelector('input').checked = false;
+        others.forEach(ch => {
+          const on = values.has(ch.dataset.value);
+          ch.classList.toggle('is-on', on);
+          ch.querySelector('input').checked = on;
+        });
+
+        // If ALL others are on, collapse back to All (spec c.)
+        const allOthersOn = others.every(ch => ch.classList.contains('is-on'));
+        if (allOthersOn){
+          allChip.classList.add('is-on');
+          allChip.querySelector('input').checked = true;
+          others.forEach(ch => { ch.classList.remove('is-on'); ch.querySelector('input').checked = false; });
+        }
+      }
+    }
+
+    // Update URL to reflect current selections (roles, topics)
+    function syncUrlFromState(){
+      const r = readBarSelections('roles');
+      const t = readBarSelections('topics');
+      const params = new URLSearchParams(window.location.search);
+
+      const fmt = (set) => Array.from(set).join(',');
+      if (r.all) params.set('roles', 'all'); else params.set('roles', fmt(r.values));
+      if (t.all) params.set('topics', 'all'); else params.set('topics', fmt(t.values));
+
+      const newUrl = window.location.pathname + '?' + params.toString() + window.location.hash;
+      history.replaceState(null, '', newUrl);
+    }
+
+    // Parse URL (comma/space/plus separated). Supports roles/topics = all | "a,b" | "a+b" | "a b"
+    function selectionsFromUrl(){
+      const params = new URLSearchParams(window.location.search);
+      const norm = (v) => (v || '').toLowerCase().replace(/\+/g, ',');
+      const rolesParam = norm(params.get('roles'));
+      const topicsParam = norm(params.get('topics'));
+
+      const roles = rolesParam === 'all' || rolesParam === '' ? new Set(['all']) : new Set(rolesParam.split(/[\s,]+/).filter(Boolean));
+      const topics = topicsParam === 'all' || topicsParam === '' ? new Set(['all']) : new Set(topicsParam.split(/[\s,]+/).filter(Boolean));
+      return { roles, topics };
+    }
+
+    // Core filtering logic
+    function applyFilters(){
+      const roleSel = readBarSelections('roles');
+      const topicSel = readBarSelections('topics');
+
+      const pubs = $$('table.pub-table[data-roles][data-topics]');
+
+      pubs.forEach(pub => {
+        const pubRoles = parseAttrList(pub.getAttribute('data-roles'));
+        const pubTopics = parseAttrList(pub.getAttribute('data-topics'));
+
+        // Role bar: OR logic (or All)
+        const roleMatch = roleSel.all || [...roleSel.values].some(v => pubRoles.has(v));
+
+        // Topic bar: AND logic (every selected topic must be present)
+        const topicMatch = topicSel.all || [...topicSel.values].every(v => pubTopics.has(v));
+
+        const show = roleMatch && topicMatch; // AND between the two bars
+        pub.toggleAttribute('hidden', !show);
+      });
+    }
+
+    // Clicking chips (checkbox-like behavior)
+    function setupBar(barName){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+      const allChip = chips.find(c => c.dataset.value === 'all');
+      const others = chips.filter(c => c.dataset.value !== 'all');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          if (chip === allChip) {
+            // Turn on All, turn off others
+            allChip.classList.add('is-on');
+            allChip.querySelector('input').checked = true;
+            others.forEach(c => { c.classList.remove('is-on'); c.querySelector('input').checked = false; });
+          } else {
+            // Toggle this chip
+            const nowOn = !chip.classList.contains('is-on');
+            chip.classList.toggle('is-on', nowOn);
+            chip.querySelector('input').checked = nowOn;
+
+            // If any other is on, All must be off
+            const anyOn = others.some(c => c.classList.contains('is-on'));
+            allChip.classList.toggle('is-on', !anyOn);
+            allChip.querySelector('input').checked = !anyOn;
+
+            // If *all* others are on, collapse back to All
+            const allOn = others.every(c => c.classList.contains('is-on'));
+            if (allOn) {
+              allChip.classList.add('is-on');
+              allChip.querySelector('input').checked = true;
+              others.forEach(c => { c.classList.remove('is-on'); c.querySelector('input').checked = false; });
+            }
+          }
+
+          applyFilters();
+          syncUrlFromState();
+        });
+      });
+    }
+
+    // Init
+    setupBar('roles');
+    setupBar('topics');
+
+    // Load from URL
+    const { roles, topics } = selectionsFromUrl();
+    setBarSelections('roles', roles);
+    setBarSelections('topics', topics);
+
+    // First paint
+    applyFilters();
+    syncUrlFromState();
+  })();
+  </script>
+
+</body></html>
