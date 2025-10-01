@@ -116,3 +116,82 @@ for i in range(len(data) - 1, -1, -1):
     html_publication += generate_html_one_publication(data[i])
 with open("html_publication.txt", "w") as f:
     f.write(html_publication)
+
+def generate_cv_one_publication(row):
+
+    authors = row["Authors"].replace("Jen-tse Huang", "\\textbf{Jen-tse Huang}")
+    if row["Equal"] != '':
+        for i in row["Equal"].split(', '):
+            authors = authors.replace(i, f'{i} *')
+    if row["Corresponding"] != '':
+        for i in row["Corresponding"].split(', '):
+            authors = authors.replace(i, f'{i} \\faEnvelopeO')
+
+    remark = '' if row["Remark"] == '' else '\\\\ {\\color{red} [' + row["Remark"] + ']}'
+
+    if row["Abbreviation"] == "NeurIPS" or "Findings" in row["Abbreviation"]:
+        proceedings = f'In {row["Publication"]}'
+    elif row["Abbreviation"] == "ICLR":
+        proceedings = f'In the {row["Publication"]}'
+    elif row["Abbreviation"] == "ICML":
+        proceedings = f'In Proceedings of the {row["Publication"]}, PMLR vol. {row["Vol"]}'
+    elif row["Vol"] != '':
+        proceedings = f'{row["Publication"]}, vol. {row["Vol"]}'
+    elif row["Abbreviation"] == 'arXiv': # \href{https://arxiv.org/abs/2502.16435}{\textit{arXiv Preprint: 2502.16435}}
+        arxiv_no = row["Arxiv"].split("/")[-1]
+        proceedings = f'arXiv Preprint: {arxiv_no}'
+    else:
+        proceedings = f'In Proceedings of the {row["Publication"]}'
+    proceedings = '\\textit{' + proceedings + '}'
+    if row["No"] != '':
+        proceedings += f', issue. {row["No"]}'
+    if row["Page"] != '':
+        if '-' in row["Page"]:
+            proceedings += f', pp. {row["Page"]}'
+        else:
+            proceedings += f', no. {row["Page"]}'
+    if row["Abbreviation"] != 'arXiv':
+        proceedings += f'. ({row["Abbreviation"]}\'{row["Year"][-2:]})'
+    else:
+        proceedings = '\\href{' + row["Arxiv"] + '}{' + proceedings + '}'
+
+    ret = f'''
+    \\item {authors}, {row["Year"]}. {row["Title"]}. {proceedings}{remark}
+'''
+    return ret
+
+cv_publication = '''
+\\begin{rSection}{Conference Papers}
+* equal contribution \\quad \\faEnvelopeO \\ corresponding author
+\\begin{etaremune}
+'''
+for i in range(len(data) - 1, -1, -1):
+    if data[i]["Type"] == 'Conference' and data[i]["Abbreviation"] != "arXiv":
+        cv_publication += generate_cv_one_publication(data[i])
+cv_publication += '''
+\\end{etaremune}
+\\end{rSection}
+
+\\begin{rSection}{Journal Papers}
+\\begin{etaremune}
+'''
+for i in range(len(data) - 1, -1, -1):
+    if data[i]["Type"] == 'Journal' and data[i]["Abbreviation"] != "arXiv":
+        cv_publication += generate_cv_one_publication(data[i])
+cv_publication += '''
+\\end{etaremune}
+\\end{rSection}
+
+\\begin{rSection}{Preprint Papers}
+\\begin{etaremune}
+'''
+for i in range(len(data) - 1, -1, -1):
+    if data[i]["Abbreviation"] == "arXiv":
+        cv_publication += generate_cv_one_publication(data[i])
+cv_publication += '''
+\\end{etaremune}
+\\end{rSection}
+'''
+with open("cv_publication.txt", "w") as f:
+    f.write(cv_publication.replace('%', '\\%'))
+
