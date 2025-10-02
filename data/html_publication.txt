@@ -156,6 +156,48 @@
   </tbody>
 </table>
 
+<!-- shi2025social -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,socsim,fairness">
+  <tbody>
+    <tr>
+      <td width="33%" valign="center" align="center">
+        <div class="hidden" style="display: inline;">
+          <img src="images/publications/shi2025social.png" width="100%">
+        </div>
+      </td>
+      <td width="67%" valign="center">
+        <p>
+          <heading>Social Welfare Function Leaderboard: When LLM Agents Allocate Social Welfare</heading><br>
+          Zhengliang Shi, Ruotian Ma, <b>Jen-tse Huang</b>, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu <i class="fa-solid fa-envelope"></i>, Xiaolong Li, Zhaochun Ren <i class="fa-solid fa-envelope"></i>, Linus<br>
+          arXiv, 2025<br>
+          | <a href="https://arxiv.org/abs/2510.01164">arXiv</a> | <a href="https://github.com/tencent/digitalhuman/tree/main/SWF">code</a> |
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ma2025hunger -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="llm,evaluation,socsim,safety">
+  <tbody>
+    <tr>
+      <td width="33%" valign="center" align="center">
+        <div class="hidden" style="display: inline;">
+          <img src="images/publications/ma2025hunger.png" width="100%">
+        </div>
+      </td>
+      <td width="67%" valign="center">
+        <p>
+          <heading>The Hunger Game Debate: On the Emergence of Over-Competition in Multi-Agent Systems</heading><br>
+          Xinbei Ma, Ruotian Ma, Xingyu Chen, Zhengliang Shi, Mengru Wang, <b>Jen-tse Huang</b>, Qu Yang, Wenxuan Wang, Fanghua Ye, Qingxuan Jiang, Mengfei Zhou, Zhuosheng Zhang <i class="fa-solid fa-envelope"></i>, Rui Wang, Hai Zhao, Zhaopeng Tu <i class="fa-solid fa-envelope"></i>, Xiaolong Li, Linus<br>
+          arXiv, 2025<br>
+          | <a href="https://arxiv.org/abs/2509.26126">arXiv</a> | <a href="https://github.com/Tencent/DigitalHuman/tree/main/HATE">code</a> |
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- zhou2025pimmur -->
 <table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="co-first" data-topics="llm,evaluation,socsim">
   <tbody>

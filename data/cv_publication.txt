@@ -81,6 +81,10 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Zhengliang Shi, Ruotian Ma, \textbf{Jen-tse Huang}, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Zhaochun Ren \faEnvelopeO, Linus, 2025. Social Welfare Function Leaderboard: When LLM Agents Allocate Social Welfare. \href{https://arxiv.org/abs/2510.01164}{\textit{arXiv Preprint: 2510.01164}}
+
+    \item Xinbei Ma, Ruotian Ma, Xingyu Chen, Zhengliang Shi, Mengru Wang, \textbf{Jen-tse Huang}, Qu Yang, Wenxuan Wang, Fanghua Ye, Qingxuan Jiang, Mengfei Zhou, Zhuosheng Zhang \faEnvelopeO, Rui Wang, Hai Zhao, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Linus, 2025. The Hunger Game Debate: On the Emergence of Over-Competition in Multi-Agent Systems. \href{https://arxiv.org/abs/2509.26126}{\textit{arXiv Preprint: 2509.26126}}
+
     \item Jiaxu Zhou *, \textbf{Jen-tse Huang *}, Xuhui Zhou, Man Ho Lam, Xintao Wang, Hao Zhu, Wenxuan Wang \faEnvelopeO, Maarten Sap \faEnvelopeO, 2025. The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies. \href{https://arxiv.org/abs/2509.18052}{\textit{arXiv Preprint: 2509.18052}}
 
     \item Bingkang Shi, \textbf{Jen-tse Huang}, Guoyi Li, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2025. FairGamer: Evaluating Biases in the Application of Large Language Models to Video Games. \href{https://arxiv.org/abs/2508.17825}{\textit{arXiv Preprint: 2508.17825}}
