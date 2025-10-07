@@ -137,7 +137,7 @@ def generate_cv_one_publication(row):
         proceedings = f'In Proceedings of the {row["Publication"]}, PMLR vol. {row["Vol"]}'
     elif row["Vol"] != '':
         proceedings = f'{row["Publication"]}, vol. {row["Vol"]}'
-    elif row["Abbreviation"] == 'arXiv': # \href{https://arxiv.org/abs/2502.16435}{\textit{arXiv Preprint: 2502.16435}}
+    elif row["Abbreviation"] == 'arXiv':
         arxiv_no = row["Arxiv"].split("/")[-1]
         proceedings = f'arXiv Preprint: {arxiv_no}'
     else:
