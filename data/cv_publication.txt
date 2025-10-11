@@ -5,7 +5,7 @@
 
     \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
 
-    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Stress-Testing LLM Code Reasoning under Misleading Natural Language Perturbations. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
+    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
 
     \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}. (EMNLP Main'25)
 
@@ -80,6 +80,8 @@
 
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
+
+    \item Youliang Yuan, Qiuyang Mang, Jingbang Chen, Hong Wan, Xiaoyuan Liu, Junjielong Xu, \textbf{Jen-tse Huang}, Wenxuan Wang, Wenxiang Jiao, Pinjia He \faEnvelopeO, 2025. Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards. \href{https://arxiv.org/abs/2510.07774}{\textit{arXiv Preprint: 2510.07774}}
 
     \item Zhengliang Shi, Ruotian Ma, \textbf{Jen-tse Huang}, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Zhaochun Ren \faEnvelopeO, Linus, 2025. Social Welfare Function Leaderboard: When LLM Agents Allocate Social Welfare. \href{https://arxiv.org/abs/2510.01164}{\textit{arXiv Preprint: 2510.01164}}
 
