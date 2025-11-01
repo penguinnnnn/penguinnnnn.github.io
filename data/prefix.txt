@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jen-Tse (Jay) Huang</title>
+
+    <meta name="author" content="Jen-Tse (Jay) Huang">
+    <meta name="descripction" content="Jen-Tse (Jay) Huang's Homepage">
+    <meta name="keywords" content="Jen-Tse Huang, Computer Science, Artificial Intelligence, Natural Language Processing, Large Language Models">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/icon.jpg">
+    
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 10px 0;
+            margin: 0;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar li {
+            margin-right: 90px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #6891D5;
+            color: white;
+        }
+
+        .active {
+            background-color: #6891D5;
+            color: white;
+        }
+
+:root {
+  --label-w: 72px;
+  --chip-gap: 12px;
+  --wrap-row-gap: 6px;
+  --nudge: 12px;
+}
+
+.filters-wrapper {
+  background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  border-radius: 12px; width: 840px; margin: 20px auto 0; padding: 12px 14px;
+}
+
+.filter-row {
+  display: flex; align-items: center; flex-wrap: wrap;
+  column-gap: var(--chip-gap);
+  row-gap: var(--wrap-row-gap);
+  margin: 6px 0;
+  padding-left: calc(var(--label-w) + var(--chip-gap) + var(--nudge));
+}
+
+.filter-label {
+  font-weight: 700;
+  width: var(--label-w);
+  flex: 0 0 var(--label-w);
+  margin-left: calc(-1 * (var(--label-w) + var(--chip-gap) + var(--nudge)));
+  margin-right: var(--chip-gap);
+}
+
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  border: 1.5px solid #cfd7e6; border-radius: 999px; padding: 6px 12px;
+  user-select: none; transition: all .15s ease;
+  font-size: 14px; line-height: 1;
+}
+.chip input { display: none; }
+.chip.is-on { background: #6891D5; color: #fff; border-color: #6891D5; }
+.chip:hover { box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+
+.filters-actions { display:flex; gap:12px; margin-top: 8px; }
+.small { font-size: 12px; color: #667; }
+
+.pub-table { transition: opacity .15s ease, transform .15s ease; }
+.pub-table[hidden] { display: none !important; }
+
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<ul class="navbar">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="publication.html" class="active">PUBLICATION</a></li>
+    <li><a href="team.html">TEAM</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="#">BACK TO TOP</a></li>
+</ul>
+<br>
+
+<table width="840" border="0" align="center" cellspacing="0" cellpadding="20"><tbody><tr><td>
+
+<!-- title -->
+
+<p align="center">
+    <pageheading>Jen-Tse (Jay) Huang 黃任澤</pageheading><br>
+    My first name sounds like: <b>Yen-Zuh</b><br>
+    <b>Email</b>: <font id="email" style="display:inline;">jhuan236@jh.edu</font>
+</p>
+
+<!-- filters -->
+<div class="filters-wrapper" id="filters">
+    <div class="filter-row" id="role-bar" role="group" aria-label="Roles filter">
+        <div class="filter-label">Role</div>
+        <label class="chip is-on" data-bar="roles" data-value="all"><input type="checkbox" checked />All</label>
+        <label class="chip" data-bar="roles" data-value="first"><input type="checkbox" />First</label>
+        <label class="chip" data-bar="roles" data-value="co-first"><input type="checkbox" />Co-first</label>
+        <label class="chip" data-bar="roles" data-value="corresponding"><input type="checkbox" />Corresponding</label>
+        <label class="chip" data-bar="roles" data-value="last"><input type="checkbox" />Last</label>
+        <label class="chip" data-bar="roles" data-value="other"><input type="checkbox" />Other</label>
+    </div>
+
+    <div class="filter-row" id="topic-bar" role="group" aria-label="Topics filter">
+        <div class="filter-label">Topics</div>
+        <label class="chip is-on" data-bar="topics" data-value="all"><input type="checkbox" checked />All</label>
+        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation</label>
+        <label class="chip" data-bar="topics" data-value="cogpsy"><input type="checkbox" />Cognitive & Psychological Science</label>
+        <label class="chip" data-bar="topics" data-value="fairness"><input type="checkbox" />Fairness</label>
+        <label class="chip" data-bar="topics" data-value="safety"><input type="checkbox" />Safety & Security</label>
+        <label class="chip" data-bar="topics" data-value="survey"><input type="checkbox" />Survey</label>
+        <label class="chip" data-bar="topics" data-value="agent"><input type="checkbox" />Agent</label>
+        <label class="chip" data-bar="topics" data-value="role-play"><input type="checkbox" />Role-play</label>
+        <label class="chip" data-bar="topics" data-value="code"><input type="checkbox" />Code</label>
+        <label class="chip" data-bar="topics" data-value="translation"><input type="checkbox" />Translation</label>
+        <label class="chip" data-bar="topics" data-value="training"><input type="checkbox" />Training</label>
+        <label class="chip" data-bar="topics" data-value="evaluation"><input type="checkbox" />Evaluation</label>
+        <label class="chip" data-bar="topics" data-value="llm"><input type="checkbox" />LLMs</label>
+        <label class="chip" data-bar="topics" data-value="vlm"><input type="checkbox" />VLMs</label>
+    </div>
+</div>
+
+<!-- publications -->

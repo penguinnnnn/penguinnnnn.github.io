@@ -1,0 +1,169 @@
+
+</td></tr></tbody></table>
+
+  <script>
+  (function(){
+    /** Utils **/
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    // Normalize attr strings like "first,corresponding" or "fairness cogsci" -> Set([...])
+    const parseAttrList = (str) => {
+      if (!str) return new Set();
+      return new Set(
+        str
+          .split(/[\s,;|]+/)
+          .map(s => s.trim().toLowerCase())
+          .filter(Boolean)
+      );
+    };
+
+    // Read selections from a bar (returns {all: boolean, values: Set})
+    function readBarSelections(barName){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+      const allOn = chips.find(c => c.dataset.value === 'all')?.classList.contains('is-on');
+      const values = new Set(
+        chips
+          .filter(c => c.dataset.value !== 'all' && c.classList.contains('is-on'))
+          .map(c => c.dataset.value)
+      );
+      return { all: !!allOn, values };
+    }
+
+    // Write selections to a bar from a set of values
+    function setBarSelections(barName, values){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+
+      const allChip = chips.find(c => c.dataset.value === 'all');
+      const others = chips.filter(c => c.dataset.value !== 'all');
+
+      if (!values || values.size === 0 || values.has('all')){
+        // All mode
+        allChip.classList.add('is-on');
+        allChip.querySelector('input').checked = true;
+        others.forEach(ch => { ch.classList.remove('is-on'); ch.querySelector('input').checked = false; });
+      } else {
+        // Specific values
+        allChip.classList.remove('is-on');
+        allChip.querySelector('input').checked = false;
+        others.forEach(ch => {
+          const on = values.has(ch.dataset.value);
+          ch.classList.toggle('is-on', on);
+          ch.querySelector('input').checked = on;
+        });
+
+        // If ALL others are on, collapse back to All (spec c.)
+        const allOthersOn = others.every(ch => ch.classList.contains('is-on'));
+        if (allOthersOn){
+          allChip.classList.add('is-on');
+          allChip.querySelector('input').checked = true;
+          others.forEach(ch => { ch.classList.remove('is-on'); ch.querySelector('input').checked = false; });
+        }
+      }
+    }
+
+    // Update URL to reflect current selections (roles, topics)
+    function syncUrlFromState(){
+      const r = readBarSelections('roles');
+      const t = readBarSelections('topics');
+      const params = new URLSearchParams(window.location.search);
+
+      const fmt = (set) => Array.from(set).join(',');
+      if (r.all) params.set('roles', 'all'); else params.set('roles', fmt(r.values));
+      if (t.all) params.set('topics', 'all'); else params.set('topics', fmt(t.values));
+
+      const newUrl = window.location.pathname + '?' + params.toString() + window.location.hash;
+      history.replaceState(null, '', newUrl);
+    }
+
+    // Parse URL (comma/space/plus separated). Supports roles/topics = all | "a,b" | "a+b" | "a b"
+    function selectionsFromUrl(){
+      const params = new URLSearchParams(window.location.search);
+      const norm = (v) => (v || '').toLowerCase().replace(/\+/g, ',');
+      const rolesParam = norm(params.get('roles'));
+      const topicsParam = norm(params.get('topics'));
+
+      const roles = rolesParam === 'all' || rolesParam === '' ? new Set(['all']) : new Set(rolesParam.split(/[\s,]+/).filter(Boolean));
+      const topics = topicsParam === 'all' || topicsParam === '' ? new Set(['all']) : new Set(topicsParam.split(/[\s,]+/).filter(Boolean));
+      return { roles, topics };
+    }
+
+    // Core filtering logic
+    function applyFilters(){
+      const roleSel = readBarSelections('roles');
+      const topicSel = readBarSelections('topics');
+
+      const pubs = $$('table.pub-table[data-roles][data-topics]');
+
+      pubs.forEach(pub => {
+        const pubRoles = parseAttrList(pub.getAttribute('data-roles'));
+        const pubTopics = parseAttrList(pub.getAttribute('data-topics'));
+
+        // Role bar: OR logic (or All)
+        const roleMatch = roleSel.all || [...roleSel.values].some(v => pubRoles.has(v));
+
+        // Topic bar: AND logic (every selected topic must be present)
+        const topicMatch = topicSel.all || [...topicSel.values].every(v => pubTopics.has(v));
+
+        const show = roleMatch && topicMatch; // AND between the two bars
+        pub.toggleAttribute('hidden', !show);
+      });
+    }
+
+    // Clicking chips (checkbox-like behavior)
+    function setupBar(barName){
+      const chips = $$(`label.chip[data-bar="${barName}"]`);
+      const allChip = chips.find(c => c.dataset.value === 'all');
+      const others = chips.filter(c => c.dataset.value !== 'all');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          if (chip === allChip) {
+            // Turn on All, turn off others
+            allChip.classList.add('is-on');
+            allChip.querySelector('input').checked = true;
+            others.forEach(c => { c.classList.remove('is-on'); c.querySelector('input').checked = false; });
+          } else {
+            // Toggle this chip
+            const nowOn = !chip.classList.contains('is-on');
+            chip.classList.toggle('is-on', nowOn);
+            chip.querySelector('input').checked = nowOn;
+
+            // If any other is on, All must be off
+            const anyOn = others.some(c => c.classList.contains('is-on'));
+            allChip.classList.toggle('is-on', !anyOn);
+            allChip.querySelector('input').checked = !anyOn;
+
+            // If *all* others are on, collapse back to All
+            const allOn = others.every(c => c.classList.contains('is-on'));
+            if (allOn) {
+              allChip.classList.add('is-on');
+              allChip.querySelector('input').checked = true;
+              others.forEach(c => { c.classList.remove('is-on'); c.querySelector('input').checked = false; });
+            }
+          }
+
+          applyFilters();
+          syncUrlFromState();
+        });
+      });
+    }
+
+    // Init
+    setupBar('roles');
+    setupBar('topics');
+
+    // Load from URL
+    const { roles, topics } = selectionsFromUrl();
+    setBarSelections('roles', roles);
+    setBarSelections('topics', topics);
+
+    // First paint
+    applyFilters();
+    syncUrlFromState();
+  })();
+  </script>
+
+</body></html>
