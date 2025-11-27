@@ -64,7 +64,7 @@ def generate_html_one_publication(row):
     remark = '' if row["Remark"] == '' else f'<font color="red"><b>[{row["Remark"]}]</b></font> '
 
     abbr = 'Preprint' if row["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF'] else row["Abbreviation"]
-    preprint_web = 'arXiv' if 'arXiv' in row["Arxiv"] else row["Abbreviation"]
+    preprint_web = 'arXiv' if 'arxiv' in row["Arxiv"] else row["Abbreviation"]
     ret = f'''
 <!-- {identifier} -->
 <table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="{role}" data-topics="{row["Topics"]}">
