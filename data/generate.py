@@ -63,6 +63,8 @@ def generate_html_one_publication(row):
 
     remark = '' if row["Remark"] == '' else f'<font color="red"><b>[{row["Remark"]}]</b></font> '
 
+    abbr = 'Preprint' if row["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF'] else row["Abbreviation"]
+    preprint_web = 'arXiv' if 'arXiv' in row["Arxiv"] else row["Abbreviation"]
     ret = f'''
 <!-- {identifier} -->
 <table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="{role}" data-topics="{row["Topics"]}">
@@ -77,8 +79,8 @@ def generate_html_one_publication(row):
 {ind}{ind}{ind}{ind}<p>
 {ind}{ind}{ind}{ind}{ind}{heading}<br>
 {ind}{ind}{ind}{ind}{ind}{authors}<br>
-{ind}{ind}{ind}{ind}{ind}{remark}{row["Abbreviation"]}, {row["Year"]}<br>
-{ind}{ind}{ind}{ind}{ind}| <a href="{row["Arxiv"]}">arXiv</a> |{addons}
+{ind}{ind}{ind}{ind}{ind}{remark}{abbr}, {row["Year"]}<br>
+{ind}{ind}{ind}{ind}{ind}| <a href="{row["Arxiv"]}">{preprint_web}</a> |{addons}
 {ind}{ind}{ind}{ind}</p>
 {ind}{ind}{ind}</td>
 {ind}{ind}</tr>
@@ -145,9 +147,9 @@ def generate_cv_one_publication(row):
         proceedings = f'In Proceedings of the {row["Publication"]}, PMLR vol. {row["Vol"]}'
     elif row["Vol"] != '':
         proceedings = f'{row["Publication"]}, vol. {row["Vol"]}'
-    elif row["Abbreviation"] == 'arXiv':
+    elif row["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:
         arxiv_no = row["Arxiv"].split("/")[-1]
-        proceedings = f'arXiv Preprint: {arxiv_no}'
+        proceedings = f'{row["Abbreviation"]} Preprint: {arxiv_no}'
     else:
         proceedings = f'In Proceedings of the {row["Publication"]}'
     proceedings = '\\textit{' + proceedings + '}'
@@ -158,13 +160,14 @@ def generate_cv_one_publication(row):
             proceedings += f', pp. {row["Page"]}'
         else:
             proceedings += f', no. {row["Page"]}'
-    if row["Abbreviation"] != 'arXiv':
+    if row["Abbreviation"] not in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:
         proceedings += f'. ({row["Abbreviation"]}\'{row["Year"][-2:]})'
     else:
         proceedings = '\\href{' + row["Arxiv"] + '}{' + proceedings + '}'
 
+    title = row["Title"] + "." if row["Title"][-1].isalnum() else row["Title"]
     ret = f'''
-    \\item {authors}, {row["Year"]}. {row["Title"]}. {proceedings}{remark}
+    \\item {authors}, {row["Year"]}. {title}. {proceedings}{remark}
 '''
     return ret
 
@@ -194,7 +197,7 @@ cv_publication += '''
 \\begin{etaremune}
 '''
 for i in range(len(data) - 1, -1, -1):
-    if data[i]["Abbreviation"] == "arXiv":
+    if data[i]["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:
         cv_publication += generate_cv_one_publication(data[i])
 cv_publication += '''
 \\end{etaremune}
