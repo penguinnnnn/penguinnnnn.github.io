@@ -177,7 +177,7 @@ cv_publication = '''
 \\begin{etaremune}
 '''
 for i in range(len(data) - 1, -1, -1):
-    if data[i]["Type"] == 'Conference' and data[i]["Abbreviation"] != "arXiv":
+    if data[i]["Type"] == 'Conference' and data[i]["Abbreviation"] not in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:
         cv_publication += generate_cv_one_publication(data[i])
 cv_publication += '''
 \\end{etaremune}
@@ -187,7 +187,7 @@ cv_publication += '''
 \\begin{etaremune}
 '''
 for i in range(len(data) - 1, -1, -1):
-    if data[i]["Type"] == 'Journal' and data[i]["Abbreviation"] != "arXiv":
+    if data[i]["Type"] == 'Journal' and data[i]["Abbreviation"] not in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:
         cv_publication += generate_cv_one_publication(data[i])
 cv_publication += '''
 \\end{etaremune}
