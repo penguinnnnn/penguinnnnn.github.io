@@ -167,7 +167,7 @@ def generate_cv_one_publication(row):
 
     title = row["Title"] + "." if row["Title"][-1].isalnum() else row["Title"]
     ret = f'''
-    \\item {authors}, {row["Year"]}. {title}. {proceedings}{remark}
+    \\item {authors}, {row["Year"]}. {title} {proceedings}{remark}
 '''
     return ret
 
