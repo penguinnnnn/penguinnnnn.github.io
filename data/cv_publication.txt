@@ -81,6 +81,10 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/pdf/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
+
+    \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \href{https://arxiv.org/abs/2601.06600}{\textit{arXiv Preprint: 2601.06600}}
+
     \item Boyuan Chen, Sitong Fang, Jiaming Ji, Yanxu Zhu, Pengcheng Wen, Jinzhou Wu, Yingshui Tan, Boren Zheng, Mengying Yuan, Wenqi Chen, Donghai Hong, Alex Qiu, Xin Chen, Jiayi Zhou, Kaile Wang, Juntao Dai, Borong Zhang, Tianzhuo Yang, Saad Siddiqui, Isabella Duan, Yawen Duan, Brian Tse, \textbf{Jen-tse Huang}, Kun Wang, Baihui Zheng, Jiaheng Liu, Jian Yang, Yiming Li, Wenting Chen, Dongrui Liu, Lukas Vierling, Zhiheng Xi, Haobo Fu, Wenxuan Wang, Jitao Sang, Zhengyan Shi, Chi-Min Chan, Eugenie Shi, Simin Li, Juncheng Li, Wei Ji, Dong Li, Jun Song, Yinpeng Dong, Jie Fu, Bo Zheng, Min Yang, Yike Guo, Philip Torr, Zhongyuan Wang, Yaodong Yang \faEnvelopeO, Tiejun Huang \faEnvelopeO, Ya-Qin Zhang \faEnvelopeO, Hongjiang Zhang \faEnvelopeO, Andrew Yao \faEnvelopeO, 2025. AI Deception: Risks, Dynamics, and Controls. \href{https://arxiv.org/abs/2511.22619}{\textit{arXiv Preprint: 2511.22619}}
 
     \item Zhengliang Shi, Yiqun Chen, Haitao Li, Weiwei Sun, Shiyu Ni, Yougang Lyu, Run-Ze Fan, Bowen Jin, Yixuan Weng, Minjun Zhu, Qiujie Xie, Xinyu Guo, Qu Yang, Jiayi Wu, Jujia Zhao, Xiaqiang Tang, Xinbei Ma, Cunxiang Wang, Jiaxin Mao, Qingyao Ai, \textbf{Jen-tse Huang}, Wenxuan Wang, Yue Zhang, Yiming Yang, Zhaopeng Tu \faEnvelopeO, Zhaochun Ren \faEnvelopeO, 2025. Deep Research: A Systematic Survey. \href{https://arxiv.org/abs/2512.02038}{\textit{arXiv Preprint: 2512.02038}}
