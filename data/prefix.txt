@@ -152,10 +152,10 @@
     </div>
 
     <div class="filter-row" id="topic-bar" role="group" aria-label="Topics filter">
-        <div class="filter-label">Topics</div>
+        <div class="filter-label">Topic</div>
         <label class="chip is-on" data-bar="topics" data-value="all"><input type="checkbox" checked />All</label>
-        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation</label>
         <label class="chip" data-bar="topics" data-value="cogpsy"><input type="checkbox" />Cognitive & Psychological Science</label>
+        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation</label>
         <label class="chip" data-bar="topics" data-value="fairness"><input type="checkbox" />Fairness</label>
         <label class="chip" data-bar="topics" data-value="safety"><input type="checkbox" />Safety & Security</label>
         <label class="chip" data-bar="topics" data-value="survey"><input type="checkbox" />Survey</label>

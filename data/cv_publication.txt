@@ -81,6 +81,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Liyuan Gou, Hongwei Feng, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \href{https://arxiv.org/abs/2601.10198}{\textit{arXiv Preprint: 2601.10198}}
+
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/pdf/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 
     \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \href{https://arxiv.org/abs/2601.06600}{\textit{arXiv Preprint: 2601.06600}}
@@ -107,7 +109,7 @@
 
     \item Ada Chen *, Yongjiang Wu *, Junyuan Zhang *, Jingyu Xiao, Shu Yang, \textbf{Jen-tse Huang}, Kun Wang, Wenxuan Wang \faEnvelopeO, Shuai Wang, 2025. JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents. \href{https://arxiv.org/abs/2505.10924}{\textit{arXiv Preprint: 2505.10924}}
 
-    \item \textbf{Jen-tse Huang \faEnvelopeO}, Kaiser Sun, Wenxuan Wang, Mark Dredze, 2025. Language Models Do Not Have Human-Like Working Memory. \href{https://arxiv.org/abs/2505.10571}{\textit{arXiv Preprint: 2505.10571}}
+    \item \textbf{Jen-tse Huang \faEnvelopeO}, Kaiser Sun, Wenxuan Wang, Mark Dredze, 2025. On the Failure of Latent State Persistence in Large Language Models. \href{https://arxiv.org/abs/2505.10571}{\textit{arXiv Preprint: 2505.10571}}
 
     \item Kun Wang *, Guibin Zhang *, Zhenhong Zhou \faEnvelopeO, Jiahao Wu \faEnvelopeO, Miao Yu, Shiqian Zhao, Chenlong Yin, Jinhu Fu, Yibo Yan, Hanjun Luo, Liang Lin, Zhihao Xu, Haolang Lu, Xinye Cao, Xinyun Zhou, Weifei Jin, Fanci Meng, Shicheng Xu, Junyuan Mao, Yu Wang, Hao Wu, Minghe Wang, Fan Zhang, Junfeng Fang, Wenjie Qu, Yue Liu, Chengwei Liu, Yifan Zhang, Qiankun Li, Chongye Guo, Yalan Qin, Zhaoxin Fan, Kai Wang, Yi Ding, Donghai Hong, Jiaming Ji, Yingxin Lai, Zitong Yu, Xinfeng Li, Yifan Jiang, Yanhui Li, Xinyu Deng, Junlin Wu, Dongxia Wang, Yihao Huang, Yufei Guo, \textbf{Jen-tse Huang}, Qiufeng Wang, Xiaolong Jin, Wenxuan Wang, Dongrui Liu, Yanwei Yue, Wenke Huang, Guancheng Wan, Heng Chang, Tianlin Li, Yi Yu, Chenghao Li, Jiawei Li, Lei Bai, Jie Zhang, Qing Guo, Jingyi Wang, Tianlong Chen, Joey Tianyi Zhou, Xiaojun Jia, Weisong Sun, Cong Wu, Jing Chen, Xuming Hu, Yiming Li, Xiao Wang, Ningyu Zhang, Luu Anh Tuan, Guowen Xu, Jiaheng Zhang, Tianwei Zhang, Xingjun Ma, Jindong Gu, Liang Pang, Xiang Wang, Bo An, Jun Sun, Mohit Bansal, Shirui Pan, Lingjuan Lyu, Yuval Elovici, Bhavya Kailkhura, Yaodong Yang, Hongwei Li, Wenyuan Xu, Yizhou Sun, Wei Wang, Qing Li, Ke Tang, Yu-Gang Jiang, Felix Juefei-Xu, Hui Xiong, Xiaofeng Wang, Dacheng Tao, Philip S. Yu, Qingsong Wen, Yang Liu, 2025. A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment. \href{https://arxiv.org/abs/2504.15585}{\textit{arXiv Preprint: 2504.15585}}
 
