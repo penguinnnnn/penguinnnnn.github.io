@@ -3,6 +3,8 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
+    \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}. (ICLR'26)
+
     \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
 
     \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
@@ -83,7 +85,7 @@
 
     \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Liyuan Gou, Hongwei Feng, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \href{https://arxiv.org/abs/2601.10198}{\textit{arXiv Preprint: 2601.10198}}
 
-    \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/pdf/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
+    \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 
     \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \href{https://arxiv.org/abs/2601.06600}{\textit{arXiv Preprint: 2601.06600}}
 
@@ -104,8 +106,6 @@
     \item Jiaxu Zhou *, \textbf{Jen-tse Huang *}, Xuhui Zhou, Man Ho Lam, Xintao Wang, Hao Zhu, Wenxuan Wang \faEnvelopeO, Maarten Sap \faEnvelopeO, 2025. The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies. \href{https://arxiv.org/abs/2509.18052}{\textit{arXiv Preprint: 2509.18052}}
 
     \item Bingkang Shi, \textbf{Jen-tse Huang}, Guoyi Li, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2025. FairGamer: Evaluating Biases in the Application of Large Language Models to Video Games. \href{https://arxiv.org/abs/2508.17825}{\textit{arXiv Preprint: 2508.17825}}
-
-    \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2025. Diversity-Enhanced Reasoning for Subjective Questions. \href{https://arxiv.org/abs/2507.20187}{\textit{arXiv Preprint: 2507.20187}}
 
     \item Ada Chen *, Yongjiang Wu *, Junyuan Zhang *, Jingyu Xiao, Shu Yang, \textbf{Jen-tse Huang}, Kun Wang, Wenxuan Wang \faEnvelopeO, Shuai Wang, 2025. JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents. \href{https://arxiv.org/abs/2505.10924}{\textit{arXiv Preprint: 2505.10924}}
 
