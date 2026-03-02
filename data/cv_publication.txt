@@ -83,6 +83,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \href{https://arxiv.org/abs/2602.19276v1}{\textit{arXiv Preprint: 2602.19276v1}}
+
     \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Liyuan Gou, Hongwei Feng, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \href{https://arxiv.org/abs/2601.10198}{\textit{arXiv Preprint: 2601.10198}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
