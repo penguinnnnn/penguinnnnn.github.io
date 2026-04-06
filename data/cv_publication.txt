@@ -3,6 +3,20 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
+    \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Yanghua Xiao \faEnvelopeO, Hongwei Feng, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+
+    \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
+
+    \item Youliang Yuan, Qiuyang Mang, Jingbang Chen, Hong Wan, Xiaoyuan Liu, Junjielong Xu, \textbf{Jen-tse Huang}, Wenxuan Wang, Wenxiang Jiao, Pinjia He \faEnvelopeO, 2026. Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+
+    \item Zhengliang Shi, Ruotian Ma, \textbf{Jen-tse Huang}, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Zhaochun Ren \faEnvelopeO, Liefeng Bo, 2026. Social Welfare Function Leaderboard: On the Emergence of LLM Agents as the Welfare Dictator. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
+
+    \item Bingkang Shi, \textbf{Jen-tse Huang}, Luo Long, Tianyu Zong, Hongzhu Yi, Yuanxiang Wang, Songlin Hu, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2026. FairGamer: Evaluating Social Biases in LLM-Based Video Game NPCs. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+
+    \item Ada Chen *, Yongjiang Wu *, Junyuan Zhang *, Jingyu Xiao, Shu Yang, \textbf{Jen-tse Huang}, Kun Wang, Wenxuan Wang \faEnvelopeO, Shuai Wang, 2026. JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+
+    \item Wenxuan Wang, Yuk-Kit Chan, Zixuan Ling, Juluan Shi, Youliang Yuan, \textbf{Jen-tse Huang}, Yifei Zhang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu, 2026. Identifying the Achilles' Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
+
     \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}. (ICLR'26)
 
     \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
@@ -85,11 +99,7 @@
 
     \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \href{https://arxiv.org/abs/2602.19276v1}{\textit{arXiv Preprint: 2602.19276v1}}
 
-    \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Liyuan Gou, Hongwei Feng, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \href{https://arxiv.org/abs/2601.10198}{\textit{arXiv Preprint: 2601.10198}}
-
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
-
-    \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \href{https://arxiv.org/abs/2601.06600}{\textit{arXiv Preprint: 2601.06600}}
 
     \item Boyuan Chen, Sitong Fang, Jiaming Ji, Yanxu Zhu, Pengcheng Wen, Jinzhou Wu, Yingshui Tan, Boren Zheng, Mengying Yuan, Wenqi Chen, Donghai Hong, Alex Qiu, Xin Chen, Jiayi Zhou, Kaile Wang, Juntao Dai, Borong Zhang, Tianzhuo Yang, Saad Siddiqui, Isabella Duan, Yawen Duan, Brian Tse, \textbf{Jen-tse Huang}, Kun Wang, Baihui Zheng, Jiaheng Liu, Jian Yang, Yiming Li, Wenting Chen, Dongrui Liu, Lukas Vierling, Zhiheng Xi, Haobo Fu, Wenxuan Wang, Jitao Sang, Zhengyan Shi, Chi-Min Chan, Eugenie Shi, Simin Li, Juncheng Li, Wei Ji, Dong Li, Jun Song, Yinpeng Dong, Jie Fu, Bo Zheng, Min Yang, Yike Guo, Philip Torr, Zhongyuan Wang, Yaodong Yang \faEnvelopeO, Tiejun Huang \faEnvelopeO, Ya-Qin Zhang \faEnvelopeO, Hongjiang Zhang \faEnvelopeO, Andrew Yao \faEnvelopeO, 2025. AI Deception: Risks, Dynamics, and Controls. \href{https://arxiv.org/abs/2511.22619}{\textit{arXiv Preprint: 2511.22619}}
 
@@ -99,17 +109,9 @@
 
     \item Shuqing Li, Jiayi Yan *, Chenyu Niu *, \textbf{Jen-tse Huang}, Yun Peng, Wenxuan Wang \faEnvelopeO, Yepang Liu, Michael R Lyu, 2025. ComboBench: Can LLMs Manipulate Physical Devices to Play Virtual Reality Games? \href{https://arxiv.org/abs/2510.24706}{\textit{arXiv Preprint: 2510.24706}}
 
-    \item Youliang Yuan, Qiuyang Mang, Jingbang Chen, Hong Wan, Xiaoyuan Liu, Junjielong Xu, \textbf{Jen-tse Huang}, Wenxuan Wang, Wenxiang Jiao, Pinjia He \faEnvelopeO, 2025. Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards. \href{https://arxiv.org/abs/2510.07774}{\textit{arXiv Preprint: 2510.07774}}
-
-    \item Zhengliang Shi, Ruotian Ma, \textbf{Jen-tse Huang}, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Zhaochun Ren \faEnvelopeO, Linus, 2025. Social Welfare Function Leaderboard: When LLM Agents Allocate Social Welfare. \href{https://arxiv.org/abs/2510.01164}{\textit{arXiv Preprint: 2510.01164}}
-
-    \item Xinbei Ma, Ruotian Ma, Xingyu Chen, Zhengliang Shi, Mengru Wang, \textbf{Jen-tse Huang}, Qu Yang, Wenxuan Wang, Fanghua Ye, Qingxuan Jiang, Mengfei Zhou, Zhuosheng Zhang \faEnvelopeO, Rui Wang, Hai Zhao, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Linus, 2025. The Hunger Game Debate: On the Emergence of Over-Competition in Multi-Agent Systems. \href{https://arxiv.org/abs/2509.26126}{\textit{arXiv Preprint: 2509.26126}}
+    \item Xinbei Ma, Ruotian Ma, Xingyu Chen, Zhengliang Shi, Mengru Wang, \textbf{Jen-tse Huang}, Qu Yang, Wenxuan Wang, Fanghua Ye, Qingxuan Jiang, Mengfei Zhou, Zhuosheng Zhang \faEnvelopeO, Rui Wang, Hai Zhao, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Liefeng Bo, 2025. The Hunger Game Debate: On the Emergence of Over-Competition in Multi-Agent Systems. \href{https://arxiv.org/abs/2509.26126}{\textit{arXiv Preprint: 2509.26126}}
 
     \item Jiaxu Zhou *, \textbf{Jen-tse Huang *}, Xuhui Zhou, Man Ho Lam, Xintao Wang, Hao Zhu, Wenxuan Wang \faEnvelopeO, Maarten Sap \faEnvelopeO, 2025. The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies. \href{https://arxiv.org/abs/2509.18052}{\textit{arXiv Preprint: 2509.18052}}
-
-    \item Bingkang Shi, \textbf{Jen-tse Huang}, Guoyi Li, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2025. FairGamer: Evaluating Biases in the Application of Large Language Models to Video Games. \href{https://arxiv.org/abs/2508.17825}{\textit{arXiv Preprint: 2508.17825}}
-
-    \item Ada Chen *, Yongjiang Wu *, Junyuan Zhang *, Jingyu Xiao, Shu Yang, \textbf{Jen-tse Huang}, Kun Wang, Wenxuan Wang \faEnvelopeO, Shuai Wang, 2025. JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents. \href{https://arxiv.org/abs/2505.10924}{\textit{arXiv Preprint: 2505.10924}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO}, Kaiser Sun, Wenxuan Wang, Mark Dredze, 2025. On the Failure of Latent State Persistence in Large Language Models. \href{https://arxiv.org/abs/2505.10571}{\textit{arXiv Preprint: 2505.10571}}
 
@@ -128,8 +130,6 @@
     \item Jen-yuan Huang, Haofan Wang, Qixun Wang, Xu Bai, Hao Ai, Peng Xing, \textbf{Jen-tse Huang}, 2024. InstantIR: Blind Image Restoration with Instant Generative Reference. \href{https://arxiv.org/abs/2410.06551}{\textit{arXiv Preprint: 2410.06551}}
 
     \item Man Tik Ng *, Hui Tung Tse *, \textbf{Jen-tse Huang \faEnvelopeO}, Jingjing Li, Wenxuan Wang, Michael R. Lyu, 2024. How Well Can LLMs Echo Us? Evaluating AI Chatbots' Role-Play Ability with ECHO. \href{https://arxiv.org/abs/2404.13957}{\textit{arXiv Preprint: 2404.13957}}
-
-    \item Wenxuan Wang *, Juluan Shi *, Zhaopeng Tu, Youliang Yuan, \textbf{Jen-tse Huang}, Wenxiang Jiao, Michael R. Lyu, 2024. The Earth is Flat? Unveiling Factual Errors in Large Language Models. \href{https://arxiv.org/abs/2401.00761}{\textit{arXiv Preprint: 2401.00761}}
 
     \item Tian Liang, Zhiwei He, \textbf{Jen-tse Huang}, Wenxuan Wang, Wenxiang Jiao \faEnvelopeO, Rui Wang, Yujiu Yang \faEnvelopeO, Zhaopeng Tu, Shuming Shi, Xing Wang \faEnvelopeO, 2023. Leveraging Word Guessing Games to Assess the Intelligence of Large Language Models. \href{https://arxiv.org/abs/2310.20499}{\textit{arXiv Preprint: 2310.20499}}
 
