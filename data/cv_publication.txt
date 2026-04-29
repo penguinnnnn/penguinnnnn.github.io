@@ -3,7 +3,7 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
-    \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Yanghua Xiao \faEnvelopeO, Hongwei Feng, 2026. HumanLLM: Benchmarking and Reinforcing LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+    \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Hongwei Feng \faEnvelopeO, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
 
     \item \textbf{Jen-tse Huang *}, Chang Chen *, Shiyang Lai, Wenxuan Wang \faEnvelopeO, Michelle R. Kaufman, Mark Dredze, 2026. Probing Multimodal Large Language Models on Cognitive Biases in Chinese Short-Video Misinformation. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
 
@@ -11,11 +11,15 @@
 
     \item Zhengliang Shi, Ruotian Ma, \textbf{Jen-tse Huang}, Xinbei Ma, Xingyu Chen, Mengru Wang, Qu Yang, Yue Wang, Fanghua Ye, Ziyang Chen, Shanyi Wang, Cixing Li, Wenxuan Wang, Zhaopeng Tu \faEnvelopeO, Xiaolong Li, Zhaochun Ren \faEnvelopeO, Liefeng Bo, 2026. Social Welfare Function Leaderboard: On the Emergence of LLM Agents as the Welfare Dictator. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
 
-    \item Bingkang Shi, \textbf{Jen-tse Huang}, Luo Long, Tianyu Zong, Hongzhu Yi, Yuanxiang Wang, Songlin Hu, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2026. FairGamer: Evaluating Social Biases in LLM-Based Video Game NPCs. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
+    \item Bingkang Shi, \textbf{Jen-tse Huang}, Long Luo, Tianyu Zong, Hongzhu Yi, Yuanxiang Wang, Songlin Hu, Xiaodan Zhang \faEnvelopeO, Zhongjiang Yao \faEnvelopeO, 2026. FairGamer: Evaluating Social Biases in LLM-Based Video Game NPCs. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
 
     \item Ada Chen *, Yongjiang Wu *, Junyuan Zhang *, Jingyu Xiao, Shu Yang, \textbf{Jen-tse Huang}, Kun Wang, Wenxuan Wang \faEnvelopeO, Shuai Wang, 2026. JARVIS or Ultron? A Survey on the Safety and Security Threats of Computer-Using Agents. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
 
-    \item Wenxuan Wang, Yuk-Kit Chan, Zixuan Ling, Juluan Shi, Youliang Yuan, \textbf{Jen-tse Huang}, Yifei Zhang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu, 2026. Identifying the Achilles' Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
+    \item Wenxuan Wang, Yuk-Kit Chan *, Zixuan Ling *, Juluan Shi *, Youliang Yuan, \textbf{Jen-tse Huang}, Yifei Zhang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu, 2026. Identifying the Achilles' Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
+
+    \item Nicole Hsing, Asuka Yuxi Zheng, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems. \textit{In Proceedings of the }. (Workshop'26)
+
+    \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. AI Welfare is Bullshit. \textit{In Proceedings of the }. (PhilPapers'26)
 
     \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}. (ICLR'26)
 
@@ -96,6 +100,10 @@
 
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
+
+    \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
+
+    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \href{https://arxiv.org/abs/2604.08510}{\textit{arXiv Preprint: 2604.08510}}
 
     \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \href{https://arxiv.org/abs/2602.19276v1}{\textit{arXiv Preprint: 2602.19276v1}}
 
