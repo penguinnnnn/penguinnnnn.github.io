@@ -19,7 +19,7 @@
 
     \item Wenxuan Wang, Yuk-Kit Chan *, Zixuan Ling *, Juluan Shi *, Youliang Yuan, \textbf{Jen-tse Huang}, Yifei Zhang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu, 2026. Identifying the Achilles' Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}. (ACL Findings'26)
 
-    \item Nicole Hsing, Asuka Yuxi Zheng, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems. \textit{In Proceedings of the }. (Workshop'26)
+    \item Nicole Hsing, Asuka Yuxi Zheng, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems. \textit{In Proceedings of the Lifelong Agents: Learning, Aligning, Evolving}. (ICLR Workshop'26)
 
     \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}. (ICLR'26)
 
