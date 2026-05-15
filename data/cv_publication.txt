@@ -25,7 +25,7 @@
 
     \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
 
-    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
+    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 120782-120828. (NeurIPS'25)
 
     \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 17981-18004. (EMNLP Main'25)
 
@@ -51,7 +51,7 @@
 
     \item Xuhui Zhou *, Zhe Su *, Sophie Feng, Jiaxu Zhou, \textbf{Jen-tse Huang}, Hsien-Te Kao, Spencer Lynch, Svitlana Volkova, Tongshuang Wu, Anita Woolley, Hao Zhu, Maarten Sap, 2025. SOTOPIA-S4: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation. \textit{In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (System Demonstrations)}, pp. 350-360. (NAACL Demo'25)
 
-    \item \textbf{Jen-tse Huang}, Eric John Li, Man Ho Lam, Tian Liang, Wenxuan Wang \faEnvelopeO, Youliang Yuan, Wenxiang Jiao \faEnvelopeO, Xing Wang, Zhaopeng Tu, Michael R. Lyu, 2025. Competing Large Language Models in Multi-Agent Gaming Environments. \textit{In the Thirteenth International Conference on Learning Representations}. (ICLR'25)
+    \item \textbf{Jen-tse Huang}, Eric John Li, Man Ho Lam, Tian Liang, Wenxuan Wang \faEnvelopeO, Youliang Yuan, Wenxiang Jiao \faEnvelopeO, Xing Wang, Zhaopeng Tu, Michael R. Lyu, 2025. Competing Large Language Models in Multi-Agent Gaming Environments. \textit{In the Thirteenth International Conference on Learning Representations}, pp. 65639-65681. (ICLR'25)
 
     \item \textbf{Jen-tse Huang}, Man Ho Lam, Eric John Li, Shujie Ren, Wenxuan Wang \faEnvelopeO, Wenxiang Jiao \faEnvelopeO, Zhaopeng Tu, Michael R. Lyu, 2024. Apathetic or Empathetic? Evaluating LLMs' Emotional Alignments with Humans. \textit{In Advances in Neural Information Processing Systems 37}, pp. 97053-97087. (NeurIPS'24)
 
@@ -69,9 +69,9 @@
 
     \item Wenxuan Wang, Wenxiang Jiao, Jingyuan Huang, Ruyi Dai, \textbf{Jen-tse Huang}, Zhaopeng Tu \faEnvelopeO, Michael R. Lyu, 2024. Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models. \textit{In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp. 6349-6384. (ACL Main'24)
 
-    \item \textbf{Jen-tse Huang}, Wenxuan Wang, Eric John Li, Man Ho Lam, Shujie Ren, Youliang Yuan, Wenxiang Jiao \faEnvelopeO, Zhaopeng Tu, Michael R. Lyu, 2024. On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs. \textit{In the Twelfth International Conference on Learning Representations}. (ICLR'24)\\ {\color{red} [Oral 86/7404 1.16\%]}
+    \item \textbf{Jen-tse Huang}, Wenxuan Wang, Eric John Li, Man Ho Lam, Shujie Ren, Youliang Yuan, Wenxiang Jiao \faEnvelopeO, Zhaopeng Tu, Michael R. Lyu, 2024. On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs. \textit{In the Twelfth International Conference on Learning Representations}, pp. 45136-45159. (ICLR'24)\\ {\color{red} [Oral 86/7404 1.16\%]}
 
-    \item Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He \faEnvelopeO, Shuming Shi, Zhaopeng Tu, 2024. GPT-4 Is Too Smart To Be Safe: Stealthy Chat with LLMs via Cipher. \textit{In the Twelfth International Conference on Learning Representations}. (ICLR'24)
+    \item Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He \faEnvelopeO, Shuming Shi, Zhaopeng Tu, 2024. GPT-4 Is Too Smart To Be Safe: Stealthy Chat with LLMs via Cipher. \textit{In the Twelfth International Conference on Learning Representations}, pp. 53902-53922. (ICLR'24)
 
     \item Wenxiang Jiao \faEnvelopeO, \textbf{Jen-tse Huang}, Wenxuan Wang, Zhiwei He, Tian Liang, Xing Wang, Shuming Shi, Zhaopeng Tu, 2023. ParroT: Translating during Chat using Large Language Models tuned with Human Translation and Feedback. \textit{In Findings of the Association for Computational Linguistics: EMNLP 2023}, pp. 15009-15020. (EMNLP Findings'23)
 
@@ -100,6 +100,10 @@
 
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
+
+    \item Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \href{https://arxiv.org/abs/2605.14415}{\textit{arXiv Preprint: 2605.14415}}
+
+    \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \href{https://arxiv.org/abs/2605.13625}{\textit{arXiv Preprint: 2605.13625}}
 
     \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
 
