@@ -3,6 +3,8 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
+    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \textit{In Proceedings of the Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
+
     \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning, PMLR vol. }. (ICML'26)
 
     \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Hongwei Feng \faEnvelopeO, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
@@ -108,8 +110,6 @@
     \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
 
     \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \href{https://arxiv.org/abs/2604.08510}{\textit{arXiv Preprint: 2604.08510}}
-
-    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \href{https://arxiv.org/abs/2602.19276v1}{\textit{arXiv Preprint: 2602.19276v1}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 
