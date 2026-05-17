@@ -103,6 +103,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.1xxxx}{\textit{arXiv Preprint: 2605.1xxxx}}
+
     \item Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \href{https://arxiv.org/abs/2605.14415}{\textit{arXiv Preprint: 2605.14415}}
 
     \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \href{https://arxiv.org/abs/2605.13625}{\textit{arXiv Preprint: 2605.13625}}
