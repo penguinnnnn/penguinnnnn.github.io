@@ -101,6 +101,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Xintao Wang \faEnvelopeO, Sirui Zheng, Hongqiu Wu, Weiyuan Li, \textbf{Jen-tse Huang}, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao, 2026. Agentopia: Long-Term Life Simulation and Learning in Agent Societies. \href{https://arxiv.org/abs/2606.07513}{\textit{arXiv Preprint: 2606.07513}}
+
     \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \href{https://arxiv.org/abs/2605.27586}{\textit{arXiv Preprint: 2605.27586}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.17228}{\textit{arXiv Preprint: 2605.17228}}
