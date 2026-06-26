@@ -3,7 +3,7 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
-    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo, Michael R. Lyu, 2026. ComUICoder: Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Element-wise Feedback. \textit{In Proceedings of the Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
+    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
 
     \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning, PMLR vol. }. (ICML'26)
 
