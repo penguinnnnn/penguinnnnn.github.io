@@ -64,7 +64,12 @@ def generate_html_one_publication(row):
     remark = '' if row["Remark"] == '' else f'<font color="red"><b>[{row["Remark"]}]</b></font> '
 
     abbr = 'Preprint' if row["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF'] else row["Abbreviation"]
-    preprint_web = 'arXiv' if 'arxiv' in row["Arxiv"] else row["Abbreviation"]
+    if 'arxiv' in row["Arxiv"]:
+        paper_link = f' <a href="{row["Arxiv"]}">arXiv</a> |'
+    elif row["Arxiv"] != '':
+        paper_link = f' <a href="{row["Arxiv"]}">paper</a> |'
+    else:
+        paper_link = ''
     ret = f'''
 <!-- {identifier} -->
 <table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="{role}" data-topics="{row["Topics"]}">
@@ -80,7 +85,7 @@ def generate_html_one_publication(row):
 {ind}{ind}{ind}{ind}{ind}{heading}<br>
 {ind}{ind}{ind}{ind}{ind}{authors}<br>
 {ind}{ind}{ind}{ind}{ind}{remark}{abbr}, {row["Year"]}<br>
-{ind}{ind}{ind}{ind}{ind}| <a href="{row["Arxiv"]}">{preprint_web}</a> |{addons}
+{ind}{ind}{ind}{ind}{ind}|{paper_link}{addons}
 {ind}{ind}{ind}{ind}</p>
 {ind}{ind}{ind}</td>
 {ind}{ind}</tr>
@@ -144,7 +149,9 @@ def generate_cv_one_publication(row):
     elif row["Abbreviation"] == "ICLR":
         proceedings = f'In the {row["Publication"]}'
     elif row["Abbreviation"] == "ICML":
-        proceedings = f'In Proceedings of the {row["Publication"]}, PMLR vol. {row["Vol"]}'
+        proceedings = f'In Proceedings of the {row["Publication"]}'
+        if row["Vol"] != '':
+            proceedings += f', PMLR vol. {row["Vol"]}'
     elif row["Vol"] != '':
         proceedings = f'{row["Publication"]}, vol. {row["Vol"]}'
     elif row["Abbreviation"] in ['arXiv', 'Preprints.org', 'TechRxiv', 'MedRxiv', 'PDF']:

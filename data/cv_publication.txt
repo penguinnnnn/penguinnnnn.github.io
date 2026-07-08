@@ -3,9 +3,11 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
-    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
+    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)
 
-    \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning, PMLR vol. }. (ICML'26)
+    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
+
+    \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning}. (ICML'26)
 
     \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Hongwei Feng \faEnvelopeO, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}. (ACL Main'26)
 
@@ -75,7 +77,7 @@
 
     \item Wenxiang Jiao \faEnvelopeO, \textbf{Jen-tse Huang}, Wenxuan Wang, Zhiwei He, Tian Liang, Xing Wang, Shuming Shi, Zhaopeng Tu, 2023. ParroT: Translating during Chat using Large Language Models tuned with Human Translation and Feedback. \textit{In Findings of the Association for Computational Linguistics: EMNLP 2023}, pp. 15009-15020. (EMNLP Findings'23)
 
-    \item Wenxuan Wang, Jingyuan Huang, \textbf{Jen-tse Huang}, Chang Chen, Jiazhen Gu \faEnvelopeO, Pinjia He, Michael R. Lyu, 2023. An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software. \textit{In Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineerin}, pp. 1339-1351. (ASE'23)
+    \item Wenxuan Wang, Jingyuan Huang, \textbf{Jen-tse Huang}, Chang Chen, Jiazhen Gu \faEnvelopeO, Pinjia He, Michael R. Lyu, 2023. An Image is Worth a Thousand Toxic Words: A Metamorphic Testing Framework for Content Moderation Software. \textit{In Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering}, pp. 1339-1351. (ASE'23)
 
     \item Jianping Zhang, \textbf{Jen-tse Huang}, Wenxuan Wang, Yichen Li, Weibin Wu \faEnvelopeO, Xiaosen Wang, Yuxin Su, Michael R. Lyu, 2023. Improving the Transferability of Adversarial Samples by Path-Augmented Method. \textit{In Proceedings of the 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp. 8173-8182. (CVPR'23)
 
@@ -83,7 +85,7 @@
 
     \item Wenxiang Jiao, Zhaopeng Tu, Jiarui Li, Wenxuan Wang, \textbf{Jen-tse Huang}, Shuming Shi, 2022. Tencent's Multilingual Machine Translation System for WMT22 Large-Scale African Languages. \textit{In Proceedings of the Seventh Conference on Machine Translation}, pp. 1049-1056. (WMT'22)\\ {\color{red} [1st Place in this Track]}
 
-    \item \textbf{Jen-tse Huang}, Jianping Zhang, Wenxuan Wang, Pinjia He \faEnvelopeO, Yuxin Su, Michael R. Lyu, 2022. AEON: A Method for Automatic Evaluation of NLP Test Cases. \textit{In Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysi}, pp. 202-214. (ISSTA'22)
+    \item \textbf{Jen-tse Huang}, Jianping Zhang, Wenxuan Wang, Pinjia He \faEnvelopeO, Yuxin Su, Michael R. Lyu, 2022. AEON: A Method for Automatic Evaluation of NLP Test Cases. \textit{In Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis}, pp. 202-214. (ISSTA'22)
 
     \item Jianping Zhang, Weibin Wu \faEnvelopeO, \textbf{Jen-tse Huang}, Yizhan Huang, Wenxuan Wang, Yuxin Su, Michael R. Lyu, 2022. Improving Adversarial Transferability via Neuron Attribution-Based Attacks. \textit{In Proceedings of the 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp. 14993-15002. (CVPR'22)
 
@@ -112,8 +114,6 @@
     \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \href{https://arxiv.org/abs/2605.13625}{\textit{arXiv Preprint: 2605.13625}}
 
     \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
-
-    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \href{https://arxiv.org/abs/2604.08510}{\textit{arXiv Preprint: 2604.08510}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 
