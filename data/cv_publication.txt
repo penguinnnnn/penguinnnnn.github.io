@@ -5,7 +5,7 @@
 
     \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)
 
-    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}. (KDD'26)
+    \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, pp. 5638-5649. (KDD'26)
 
     \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning}. (ICML'26)
 
@@ -23,11 +23,11 @@
 
     \item Wenxuan Wang, Yuk-Kit Chan *, Zixuan Ling *, Juluan Shi *, Youliang Yuan, \textbf{Jen-tse Huang}, Yifei Zhang, Wenxiang Jiao, Zhaopeng Tu, Michael R. Lyu, 2026. Identifying the Achilles' Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models. \textit{In Findings of the Association for Computational Linguistics: ACL 2026}, pp. 34288-34309. (ACL Findings'26)
 
-    \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}. (ICLR'26)
+    \item Yumeng Wang *, Zhiyuan Fan *, Jiayu Liu *, \textbf{Jen-tse Huang}, Yi R. Fung \faEnvelopeO, 2026. Diversity-Enhanced Reasoning for Subjective Questions. \textit{In the Fourteenth International Conference on Learning Representations}, pp. 75302-75332. (ICLR'26)
 
-    \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}. (NeurIPS'25)
+    \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}, pp. 7821-7851. (NeurIPS'25)
 
-    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 120782-120828. (NeurIPS'25)
+    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 133886-133932. (NeurIPS'25)
 
     \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 17981-18004. (EMNLP Main'25)
 
@@ -95,6 +95,8 @@
 \begin{rSection}{Journal Papers}
 \begin{etaremune}
 
+    \item Ziyi Liu, Priyanka Dey, \textbf{Jen-tse Huang}, Zhenyu Zhao, Bowen Jiang, Rahul Gupta, Yang Liu, Yao Du, Jieyu Zhao, 2026. Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Cultural Intelligence with CQBench. \textit{Transactions on Machine Learning Research, vol. 2026}. (TMLR'26)
+
     \item Wenxuan Wang, Wenxiang Jiao, \textbf{Jen-tse Huang}, Zhaopeng Tu \faEnvelopeO, Michael R. Lyu, 2025. On the Shortcut Learning in Multilingual Neural Machine Translation. \textit{Neurocomputing, vol. 615}, no. 128833. (Neurocomputing'25)
 
 \end{etaremune}
@@ -134,8 +136,6 @@
     \item Kun Wang *, Guibin Zhang *, Zhenhong Zhou \faEnvelopeO, Jiahao Wu \faEnvelopeO, Miao Yu, Shiqian Zhao, Chenlong Yin, Jinhu Fu, Yibo Yan, Hanjun Luo, Liang Lin, Zhihao Xu, Haolang Lu, Xinye Cao, Xinyun Zhou, Weifei Jin, Fanci Meng, Shicheng Xu, Junyuan Mao, Yu Wang, Hao Wu, Minghe Wang, Fan Zhang, Junfeng Fang, Wenjie Qu, Yue Liu, Chengwei Liu, Yifan Zhang, Qiankun Li, Chongye Guo, Yalan Qin, Zhaoxin Fan, Kai Wang, Yi Ding, Donghai Hong, Jiaming Ji, Yingxin Lai, Zitong Yu, Xinfeng Li, Yifan Jiang, Yanhui Li, Xinyu Deng, Junlin Wu, Dongxia Wang, Yihao Huang, Yufei Guo, \textbf{Jen-tse Huang}, Qiufeng Wang, Xiaolong Jin, Wenxuan Wang, Dongrui Liu, Yanwei Yue, Wenke Huang, Guancheng Wan, Heng Chang, Tianlin Li, Yi Yu, Chenghao Li, Jiawei Li, Lei Bai, Jie Zhang, Qing Guo, Jingyi Wang, Tianlong Chen, Joey Tianyi Zhou, Xiaojun Jia, Weisong Sun, Cong Wu, Jing Chen, Xuming Hu, Yiming Li, Xiao Wang, Ningyu Zhang, Luu Anh Tuan, Guowen Xu, Jiaheng Zhang, Tianwei Zhang, Xingjun Ma, Jindong Gu, Liang Pang, Xiang Wang, Bo An, Jun Sun, Mohit Bansal, Shirui Pan, Lingjuan Lyu, Yuval Elovici, Bhavya Kailkhura, Yaodong Yang, Hongwei Li, Wenyuan Xu, Yizhou Sun, Wei Wang, Qing Li, Ke Tang, Yu-Gang Jiang, Felix Juefei-Xu, Hui Xiong, Xiaofeng Wang, Dacheng Tao, Philip S. Yu, Qingsong Wen, Yang Liu, 2025. A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment. \href{https://arxiv.org/abs/2504.15585}{\textit{arXiv Preprint: 2504.15585}}
 
     \item Haoxuan Li, Mingyu Derek Ma, \textbf{Jen-tse Huang}, Zhaotian Weng, Wei Wang, Jieyu Zhao, 2025. BiasInspector: Detecting Bias in Structured Data through LLM Agents. \href{https://arxiv.org/abs/2504.04855}{\textit{arXiv Preprint: 2504.04855}}
-
-    \item Ziyi Liu, Priyanka Dey, Zhenyu Zhao, \textbf{Jen-tse Huang}, Rahul Gupta, Yang Liu, Jieyu Zhao, 2025. Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Metacognitive Cultural Intelligence with CQ-Bench. \href{https://arxiv.org/abs/2504.01127}{\textit{arXiv Preprint: 2504.01127}}
 
     \item Xiaoying Zhang \faEnvelopeO, Da Peng, Yipeng Zhang, Zonghao Guo \faEnvelopeO, Chengyue Wu, \textbf{Jen-tse Huang}, Chi Chen, Wei Ke, Helen Meng \faEnvelopeO, Maosong Sun, 2025. Will Pre-Training Ever End? A First Step Toward Next-Generation Foundation MLLMs via Self-Improving Systematic Cognition. \href{https://arxiv.org/abs/2503.12303}{\textit{arXiv Preprint: 2503.12303}}
 

@@ -70,6 +70,73 @@
             background-color: #6891D5;
             color: white;
         }
+
+.rh { font-size: 15px; line-height: 1.55; color: #1a1a1a; text-align: left; }
+
+.rh-h { font-weight: 700; font-size: 15px; margin: 0 0 .7em; }
+
+.rh-item {
+  display: flex; gap: 12px;
+  padding: 0;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+
+.rh-num {
+  flex: 0 0 22px; height: 22px; margin-top: 2px;
+  border-radius: 999px;
+  background: #6891D5; color: #fff;
+  font-size: 12px; font-weight: 700; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.rh-body { flex: 1; min-width: 0; }
+
+.rh-lead { font-weight: 700; margin-bottom: .45em; }
+
+.rh-row {
+  display: flex; flex-wrap: wrap; align-items: center;
+  column-gap: 8px; row-gap: 6px;
+  margin-bottom: 6px;
+}
+.rh-row:last-child { margin-bottom: 0; }
+.rh-row > span { color: #555; }
+
+.rh-row a {
+  display: inline-flex; align-items: center;
+  font-size: 13px; line-height: 1;
+  padding: 5px 11px;
+  border: 1.5px solid #cfd7e6;
+  border-radius: 999px;
+  background: #fff; color: #4a6fb5;
+  text-decoration: none; white-space: nowrap;
+  transition: all .15s ease;
+}
+.rh-row a:hover {
+  background: #6891D5; border-color: #6891D5; color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.rh-row a:hover .oral { color: #ffe3ab; }
+
+.oral { color: #c47f17; font-weight: 700; }
+
+.rh-ans {
+  margin-top: 1.1em;
+  padding: 12px 14px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.rh-ans span { color: #555; }
+.rh-ans b { color: #3f6099; }
+
+@media (max-width: 600px) {
+  .rh { font-size: 14px; }
+  .rh-item { gap: 9px; }
+  .rh-row a { font-size: 12px; padding: 4px 9px; }
+}
+
     </style>
 </head>
 
@@ -113,11 +180,85 @@
             </td>
 
             <td width="67%" valign="center" align="justify">
-                <p> I am a Postdoc affiliated with the Center for Language and Speech Processing (<a href='https://www.clsp.jhu.edu/'><strong>CLSP</strong></a>) at Johns Hopkins University (<a href='https://www.jhu.edu/'><strong>JHU</strong></a>), working with Prof. <a href='https://www.cs.jhu.edu/~mdredze/'>Mark Dredze</a> (Director, JHU DSAI Institute). <b>I make machines more cognitively and behaviorally aligned with humans.</b> I also work closely with Prof. <a href='https://maartensap.com/index.html'>Maarten Sap</a> at <a href='https://www.lti.cs.cmu.edu/'><strong>CMU LTI</strong></a>.</p>
+                <p> I am a Postdoc affiliated with the Center for Language and Speech Processing (<a href='https://www.clsp.jhu.edu/'><strong>CLSP</strong></a>) at Johns Hopkins University (<a href='https://www.jhu.edu/'><strong>JHU</strong></a>), working with Prof. <a href='https://www.cs.jhu.edu/~mdredze/'>Mark Dredze</a> (Director, JHU DSAI Institute). I also work closely with Prof. <a href='https://maartensap.com/index.html'>Maarten Sap</a> at <a href='https://www.lti.cs.cmu.edu/'><strong>CMU LTI</strong></a>.</p>
                 <p> I obtained my Ph.D. in Computer Science and Engineering at the Chinese University of Hong Kong (<a href='https://www.cuhk.edu.hk/english/index.html'><strong>CUHK</strong></a>) in 2024, advised by Prof. <a href='https://www.cse.cuhk.edu.hk/lyu/home'>Michael R. Lyu</a> (IEEE Life Fellow, ACM Fellow, AAAS Fellow).</p>
                 <p> I obtained my B.Sc. in Computer Science at Peking University (<a href='https://english.pku.edu.cn/'><strong>PKU</strong></a>) in 2019. I was a student in <a href='https://yuanpei.pku.edu.cn/en/'><strong>Yuanpei College</strong></a>, where students can choose any majors and take any courses from the entire university. This chance made me able to enjoy the knowledge in not only computer science, but also psychology, sociology, economics, and philosophy.</p><br>
             </td>
         </tr>
+    </tbody>
+</table>
+
+<!-- research -->
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tbody>
+<tr>
+  <td width="100%" valign="top">
+    <sectionheading>&nbsp;&nbsp;Research Highlights</sectionheading>
+    <div class="rh">
+      <div class="rh-item">
+        <div class="rh-num">1</div>
+        <div class="rh-body">
+          <div class="rh-lead">How an AI agent behaves on its own</div>
+          <div class="rh-row">
+            <span>what it says about itself</span>
+            <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/c48dcd605cfb17d5b4f94ce106a915f7-Abstract-Conference.html">ICLR'24&nbsp;<span class="oral">Oral</span></a>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b0049c3f9c53fb06f674ae66c2cf2376-Abstract-Conference.html">NeurIPS'24</a>
+            <a href="https://aclanthology.org/2024.emnlp-main.354/">EMNLP'24</a>
+            <a href="https://aclanthology.org/2024.acl-long.102/">ACL'24</a>
+          </div>
+          <div class="rh-row">
+            <span>what it does</span>
+            <a href="https://arxiv.org/abs/2502.16435">arXiv'25</a>
+            <a href="https://aclanthology.org/2026.findings-acl.616/">ACL-Findings'26</a>
+            <a href="https://arxiv.org/abs/2601.07972">arXiv'26</a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="rh-item">
+        <div class="rh-num">2</div>
+        <div class="rh-body">
+          <div class="rh-lead">How an AI agent behaves among models</div>
+          <div class="rh-row">
+            <span>how individuals interact</span>
+            <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/a46adbe2f0ca0e16ef8857e188991ad7-Abstract-Conference.html">ICLR'25</a>
+            <a href="https://proceedings.mlr.press/v267/huang25ay.html">ICML'25</a>
+            <a href="https://arxiv.org/abs/2605.27586">arXiv'26</a>
+          </div>
+          <div class="rh-row">
+            <span>what collective they form</span>
+            <a href="https://arxiv.org/abs/2509.18052">arXiv'25</a>
+            <a href="https://arxiv.org/abs/2604.24698">arXiv'26</a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="rh-item">
+        <div class="rh-num">3</div>
+        <div class="rh-body">
+          <div class="rh-lead">How an AI agent behaves toward humans</div>
+          <div class="rh-row">
+            <span>what the biases are</span>
+            <a href="https://dl.acm.org/doi/10.1145/3664647.3681433">ACMMM'24&nbsp;<span class="oral">Oral</span></a>
+            <a href="https://aclanthology.org/2025.emnlp-main.908/">EMNLP'25</a>
+            <a href="https://aclanthology.org/2025.emnlp-main.910/">EMNLP'25</a>
+            <a href="https://aclanthology.org/2026.acl-long.2015/">ACL'26</a>
+          </div>
+          <div class="rh-row">
+            <span>what the biases cost</span>
+            <a href="https://aclanthology.org/2024.findings-acl.349/">ACL-Findings'24</a>
+            <a href="https://arxiv.org/abs/2605.17228">arXiv'26</a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="rh-ans">
+        <span>My research answers:</span> <b>What should be validated before a human-AI society?</b>
+      </div>
+    </div>
+  </td>
+</tr>
     </tbody>
 </table>
 
@@ -129,7 +270,8 @@
             <td>
                 <sectionheading>&nbsp;&nbsp;News</sectionheading>
                 <ul>
-                    <li> <b>[Jul. 2025]</b> Our <a href="https://iab-agents.github.io/">1st IAB Workshop</a> will be held at <a href='https://neurips.cc/Conferences/2026'>NeurIPS'26</a>! </li>
+                    <li> <b>[Aug. 2026]</b> One paper is accepted to <a href='https://jmlr.org/tmlr/'>TMLR</a>! </li>
+                    <li> <b>[Jul. 2026]</b> Our <a href="https://iab-agents.github.io/">1st IAB Workshop</a> will be held at <a href='https://neurips.cc/Conferences/2026'>NeurIPS'26</a>! </li>
                     <li> <b>[Jul. 2026]</b> One paper is accepted to <a href='https://colmweb.org/2026/'>COLM'26</a>! </li>
                     <li> <b>[May. 2026]</b> One paper is accepted to <a href='https://kdd2026.kdd.org/'>KDD'26</a>! </li>
                     <li> <b>[Apr. 2026]</b> One paper is accepted to <a href='https://icml.cc/Conferences/2026'>ICML'26</a>! </li>
@@ -149,6 +291,7 @@
                         <li> <b>[Dec. 2024]</b> I defend my PhD thesis and graduate from the Chinese University of Hong Kong (<a href='https://www.cuhk.edu.hk/english/index.html'>CUHK</a>)! </li>
                         <li> <b>[Nov. 2024]</b> Named as one of the <a href='https://x.com/emnlpmeeting/status/1857169065569292540'>Outstanding Reviewers</a> for EMNLP'24! </li>
                         <li> <b>[Nov. 2024]</b> Named as one of the <a href='https://neurips.cc/Conferences/2024/ProgramCommittee#top-reviewers'>Top Reviewers</a> for NeurIPS'24! <b>[1304/15160 8.6%]</b> </li>
+                        <li> <b>[Oct. 2024]</b> One paper is accepted to <a href='https://www.sciencedirect.com/journal/neurocomputing'>Neurocomputing</a>! </li>
                         <li> <b>[Sep. 2024]</b> One paper is accepted to <a href='https://neurips.cc/Conferences/2024'>NeurIPS'24</a>! </li>
                         <li> <b>[Sep. 2024]</b> Three paper is accepted to <a href='https://2024.emnlp.org/'>EMNLP'24</a>! All three to main conference. </li>
                         <li> <b>[Jul. 2024]</b> One paper is accepted to <a href='https://2024.acmmm.org/'>ACMMM'24</a> and selected as an <font color="red"><b>ORAL</b></font>! </li>

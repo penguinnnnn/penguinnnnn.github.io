@@ -103,6 +103,70 @@
 .pub-table { transition: opacity .15s ease, transform .15s ease; }
 .pub-table[hidden] { display: none !important; }
 
+.rh { font-size: 15px; line-height: 1.55; color: #1a1a1a; text-align: left; }
+
+.rh-h { font-weight: 700; font-size: 15px; margin: 0 0 .7em; }
+
+.rh-item {
+  display: flex; gap: 12px;
+  padding: .75em 0;
+  border-top: 1px solid #eceff4;
+}
+
+.rh-num {
+  flex: 0 0 22px; height: 22px; margin-top: 2px;
+  border-radius: 999px;
+  background: #6891D5; color: #fff;
+  font-size: 12px; font-weight: 700; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.rh-body { flex: 1; min-width: 0; }
+
+.rh-lead { font-weight: 700; margin-bottom: .45em; }
+
+.rh-row {
+  display: flex; flex-wrap: wrap; align-items: center;
+  column-gap: 8px; row-gap: 6px;
+  margin-bottom: 6px;
+}
+.rh-row:last-child { margin-bottom: 0; }
+.rh-row > span { color: #555; }
+
+.rh-row a {
+  display: inline-flex; align-items: center;
+  font-size: 13px; line-height: 1;
+  padding: 5px 11px;
+  border: 1.5px solid #cfd7e6;
+  border-radius: 999px;
+  background: #fff; color: #4a6fb5;
+  text-decoration: none; white-space: nowrap;
+  transition: all .15s ease;
+}
+.rh-row a:hover {
+  background: #6891D5; border-color: #6891D5; color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.rh-row a:hover .oral { color: #ffe3ab; }
+
+.oral { color: #c47f17; font-weight: 700; }
+
+.rh-ans {
+  margin-top: 1.1em;
+  padding: 12px 14px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.rh-ans span { color: #555; }
+.rh-ans b { color: #3f6099; }
+
+@media (max-width: 600px) {
+  .rh { font-size: 14px; }
+  .rh-item { gap: 9px; }
+  .rh-row a { font-size: 12px; padding: 4px 9px; }
+}
     </style>
 </head>
 
@@ -127,18 +191,6 @@
     <b>Email</b>: <font id="email" style="display:inline;">jhuan236@jh.edu</font>
 </p>
 
-<!-- overview -->
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody>
-        <tr>
-            <td width="100%" valign="center" align="justify">
-                <p><b>Research Highlights</b>: I discover human-like traits in AI (<a href='https://proceedings.iclr.cc/paper_files/paper/2024/hash/c48dcd605cfb17d5b4f94ce106a915f7-Abstract-Conference.html'>ICLR'24<b>Oral</b></a>, <a href='https://aclanthology.org/2024.acl-long.102/'>ACL'24</a>, <a href='https://aclanthology.org/2024.emnlp-main.354/'>EMNLP'24</a>), teach AI to understand human characteristics (<a href='https://proceedings.neurips.cc/paper_files/paper/2024/hash/b0049c3f9c53fb06f674ae66c2cf2376-Abstract-Conference.html'>NeurIPS'24</a>, <a href='https://proceedings.mlr.press/v267/wang25dk.html'>ICML'25</a>), and align their behaviors with humans (<a href='https://proceedings.iclr.cc/paper_files/paper/2025/hash/a46adbe2f0ca0e16ef8857e188991ad7-Abstract-Conference.html'>ICLR'25</a>, <a href='https://proceedings.mlr.press/v267/huang25ay.html'>ICML'25</a>, <a href='https://aclanthology.org/2024.emnlp-main.383/'>EMNLP'24</a>). I also identify AI's defects leveraging human's cognition (<a href="https://arxiv.org/abs/2509.18052">arXiv'25</a>, <a href="https://arxiv.org/abs/2505.10571">arXiv'25</a>, <a href="https://arxiv.org/abs/2502.16435">arXiv'25</a>).</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 <!-- filters -->
 <div class="filters-wrapper" id="filters">
     <div class="filter-row" id="role-bar" role="group" aria-label="Roles filter">
@@ -154,9 +206,9 @@
     <div class="filter-row" id="topic-bar" role="group" aria-label="Topics filter">
         <div class="filter-label">Topic</div>
         <label class="chip is-on" data-bar="topics" data-value="all"><input type="checkbox" checked />All</label>
-        <label class="chip" data-bar="topics" data-value="cogpsy"><input type="checkbox" />Cognitive & Psychological Science🏅</label>
-        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation🥈</label>
-        <label class="chip" data-bar="topics" data-value="fairness"><input type="checkbox" />Fairness🥉</label>
+        <label class="chip" data-bar="topics" data-value="cogpsy"><input type="checkbox" />Cognitive & Psychological Science</label>
+        <label class="chip" data-bar="topics" data-value="socsim"><input type="checkbox" />Social Simulation</label>
+        <label class="chip" data-bar="topics" data-value="fairness"><input type="checkbox" />Fairness</label>
         <label class="chip" data-bar="topics" data-value="agent"><input type="checkbox" />Agent</label>
         <label class="chip" data-bar="topics" data-value="reasoning"><input type="checkbox" />Reasoning</label>
         <label class="chip" data-bar="topics" data-value="safety"><input type="checkbox" />Safety & Alignment</label>
@@ -194,6 +246,27 @@
           Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, <b>Jen-tse Huang</b>, Graham Neubig<br>
           COLM, 2026<br>
           | <a href="https://arxiv.org/abs/2604.08510">arXiv</a> | <a href="https://github.com/KaiserWhoLearns/ElementalTask">code</a> |
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- liu2026llms -->
+<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="eval,socsim">
+  <tbody>
+    <tr>
+      <td width="33%" valign="center" align="center">
+        <div class="hidden" style="display: inline;">
+          <img src="images/publications/liu2026llms.png" width="100%">
+        </div>
+      </td>
+      <td width="67%" valign="center">
+        <p>
+          <heading>Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Cultural Intelligence with CQBench</heading><br>
+          Ziyi Liu, Priyanka Dey, <b>Jen-tse Huang</b>, Zhenyu Zhao, Bowen Jiang, Rahul Gupta, Yang Liu, Yao Du, Jieyu Zhao<br>
+          TMLR, 2026<br>
+          | <a href="https://arxiv.org/abs/2504.01127">arXiv</a> | <a href="https://github.com/limenlp/CQ-Bench">code</a> |
         </p>
       </td>
     </tr>
@@ -526,7 +599,7 @@
       </td>
       <td width="67%" valign="center">
         <p>
-          <heading>Diversity-Enhanced Reasoning for Subjective Questions</heading><br>
+          <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/7a05a152023a1d11e3c04f2cf8ca4c88-Abstract-Conference.html" id="wang2026diversity"><heading>Diversity-Enhanced Reasoning for Subjective Questions</heading></a><br>
           Yumeng Wang <i class="fa-solid fa-star-of-life"></i>, Zhiyuan Fan <i class="fa-solid fa-star-of-life"></i>, Jiayu Liu <i class="fa-solid fa-star-of-life"></i>, <b>Jen-tse Huang</b>, Yi R. Fung <i class="fa-solid fa-envelope"></i><br>
           ICLR, 2026<br>
           | <a href="https://arxiv.org/abs/2507.20187">arXiv</a> | <a href="https://github.com/yumeng-10/multirole-r1">code</a> | <a href="https://iclr.cc/media/PosterPDFs/ICLR%202026/10011855.png">poster</a> | <a href="https://iclr.cc/media/iclr-2026/Slides/10011855_LfLPkbx.pdf">slides</a> | <a href="https://iclr.cc/virtual/2026/poster/10011855">video</a> |
@@ -1065,27 +1138,6 @@
           Haoxuan Li, Mingyu Derek Ma, <b>Jen-tse Huang</b>, Zhaotian Weng, Wei Wang, Jieyu Zhao<br>
           Preprint, 2025<br>
           | <a href="https://arxiv.org/abs/2504.04855">arXiv</a> | <a href="https://github.com/limenlp/BiasInspector">code</a> |
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- liu2025llms -->
-<table class="pub-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="15" data-roles="other" data-topics="eval,socsim">
-  <tbody>
-    <tr>
-      <td width="33%" valign="center" align="center">
-        <div class="hidden" style="display: inline;">
-          <img src="images/publications/liu2025llms.png" width="100%">
-        </div>
-      </td>
-      <td width="67%" valign="center">
-        <p>
-          <heading>Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Metacognitive Cultural Intelligence with CQ-Bench</heading><br>
-          Ziyi Liu, Priyanka Dey, Zhenyu Zhao, <b>Jen-tse Huang</b>, Rahul Gupta, Yang Liu, Jieyu Zhao<br>
-          Preprint, 2025<br>
-          | <a href="https://arxiv.org/abs/2504.01127">arXiv</a> | <a href="https://github.com/limenlp/CQ-Bench">code</a> |
         </p>
       </td>
     </tr>
