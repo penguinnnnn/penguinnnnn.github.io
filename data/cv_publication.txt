@@ -3,6 +3,8 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
+    \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}. (EMNLP Main'26)
+
     \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)
 
     \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, pp. 5638-5649. (KDD'26)
@@ -106,8 +108,6 @@
 \begin{etaremune}
 
     \item Xintao Wang \faEnvelopeO, Sirui Zheng, Hongqiu Wu, Weiyuan Li, \textbf{Jen-tse Huang}, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao, 2026. Agentopia: Long-Term Life Simulation and Learning in Agent Societies. \href{https://arxiv.org/abs/2606.07513}{\textit{arXiv Preprint: 2606.07513}}
-
-    \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \href{https://arxiv.org/abs/2605.27586}{\textit{arXiv Preprint: 2605.27586}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.17228}{\textit{arXiv Preprint: 2605.17228}}
 
