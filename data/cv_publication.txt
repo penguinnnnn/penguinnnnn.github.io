@@ -107,6 +107,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Weihao Xuan \faEnvelopeO *, Qingcheng Zeng *, Jiarui Liu *, Rui Yang *, Yunze Xiao, Yinxi Li, Zeqi Zhou, Weiwei Sun, Heli Qi, Leyang Cui, Tianhao Ma, Hanqun Cao, Junjue Wang, Tianyu Liu, Weihua Du, Yueqi Song, Jiayi Geng, Matthew Yu Heng Wong, Rob Voigt, Chuan Hong, Xiang Yue, \textbf{Jen-tse Huang}, Xuhai Xu, Yifan Peng, Pheng Ann Heng, Yiming Yang, Bernhard Schölkopf, Zhijing Jin, Nan Liu \faEnvelopeO, Naoto Yokoya \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Learning from Use: Test-Time Learning in Large Language Models and Agents. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7319678}{\textit{SSRN Preprint: 7319678}}
+
     \item Xintao Wang \faEnvelopeO, Sirui Zheng, Hongqiu Wu, Weiyuan Li, \textbf{Jen-tse Huang}, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao, 2026. Agentopia: Long-Term Life Simulation and Learning in Agent Societies. \href{https://arxiv.org/abs/2606.07513}{\textit{arXiv Preprint: 2606.07513}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.17228}{\textit{arXiv Preprint: 2605.17228}}

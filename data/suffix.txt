@@ -1,5 +1,5 @@
 
-</td></tr></tbody></table>
+</div>
 
   <script>
   (function(){
@@ -93,7 +93,7 @@
       const roleSel = readBarSelections('roles');
       const topicSel = readBarSelections('topics');
 
-      const pubs = $$('table.pub-table[data-roles][data-topics]');
+      const pubs = $$('.pub[data-roles][data-topics]');
 
       pubs.forEach(pub => {
         const pubRoles = parseAttrList(pub.getAttribute('data-roles'));

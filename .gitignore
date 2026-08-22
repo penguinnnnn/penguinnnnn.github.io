@@ -1,3 +1,7 @@
 **/.DS_Store
 **/.ipynb_checkpoints/
 **/__pycache__/
+
+# Full-resolution originals. images/ holds the compressed copies that ship;
+# regenerate them with scripts/optimize_images.py after adding files here.
+raw/
