@@ -8,6 +8,10 @@ raw/ folder and re-run this script.
     python3 scripts/optimize_images.py          # only what changed
     python3 scripts/optimize_images.py --force  # rebuild everything
 
+Output names are the original names with any leading "_", "." or "#" stripped,
+because GitHub Pages runs Jekyll and Jekyll refuses to publish files starting
+with those -- they 404 on the live site while working fine locally.
+
 Sizes are driven by how large each image is actually displayed, times 3 for
 high-DPI screens:
   headshots   rendered  100px  ->  shorter side 300px
@@ -39,6 +43,11 @@ SPECIAL = {
 
 EXTS = {".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"}
 
+# Jekyll (which GitHub Pages runs by default) skips names starting with these,
+# so a raw/ file called _DSC0761.JPG would 404 once pushed. Camera exports are
+# full of them, so rename on the way out instead of policing raw/.
+UNSAFE_PREFIX = re.compile(r"^[_.#]+")
+
 # Pages that list their images by hand, so a new file needs an edit there too.
 # images/photos is not here: that gallery is generated, see GALLERY below.
 SHOWN_BY = {
@@ -62,6 +71,13 @@ GALLERY = {
     "end": "<!-- photos:end -->",
     "element_id": "photos",
 }
+
+
+def web_name(name):
+    """The name an original ships under: same name, minus any Jekyll-hostile prefix."""
+    stem, ext = os.path.splitext(name)
+    stem = UNSAFE_PREFIX.sub("", stem)
+    return stem + ext if stem else name
 
 
 def target_size(size, mode, target):
@@ -115,7 +131,7 @@ def prune_orphans(dry_run=False):
             print(f"  ! {src_dir}/ is missing, not pruning {out_dir}/")
             continue
 
-        expected = {f for f in os.listdir(abs_src)
+        expected = {web_name(f) for f in os.listdir(abs_src)
                     if os.path.splitext(f)[1].lower() in EXTS}
         if not expected:
             print(f"  ! {src_dir}/ has no images, not pruning {out_dir}/")
@@ -132,18 +148,20 @@ def prune_orphans(dry_run=False):
     return removed
 
 
-def sync_gallery(dry_run=False, pruned=None):
+def sync_gallery(dry_run=False, pruned=None, planned=None):
     """Rewrite the generated photo gallery in about.html from images/photos/."""
     page = os.path.join(ROOT, GALLERY["page"])
     img_dir = os.path.join(ROOT, GALLERY["img_dir"])
     if not (os.path.exists(page) and os.path.isdir(img_dir)):
         return
 
-    # on a dry run the orphans are still on disk; leave them out so the
-    # reported result matches what a real run would produce
+    # on a dry run the orphans are still on disk and the new files are not
+    # there yet; correct for both so the report matches what a real run gives
     gone = (pruned or {}).get(GALLERY["img_dir"], set())
-    names = sorted(f for f in os.listdir(img_dir)
-                   if os.path.splitext(f)[1].lower() in EXTS and f not in gone)
+    coming = (planned or {}).get(GALLERY["img_dir"], set())
+    names = sorted(coming | {f for f in os.listdir(img_dir)
+                             if os.path.splitext(f)[1].lower() in EXTS
+                             and f not in gone})
 
     html = open(page, encoding="utf-8").read()
     i = html.find(GALLERY["start"])
@@ -227,7 +245,19 @@ def main():
             if rel in SPECIAL:
                 pairs.append((rel,) + SPECIAL[rel])
             else:
-                pairs.append((rel, os.path.join(out_dir, name), mode, target, quality))
+                pairs.append((rel, os.path.join(out_dir, web_name(name)),
+                              mode, target, quality))
+
+    claimed = {}
+    clash = False
+    for rel, dst_rel, *_ in pairs:
+        if dst_rel in claimed:
+            clash = True
+            print(f"  ! {rel} and {claimed[dst_rel]} both ship as {dst_rel} "
+                  f"-- rename one of them in raw/")
+        claimed[dst_rel] = rel
+    if clash:
+        return 1
 
     total_in = total_out = 0
     done = skipped = 0
@@ -262,7 +292,11 @@ def main():
 
     print()
     pruned = prune_orphans(args.dry_run)
-    sync_gallery(args.dry_run, pruned)
+    planned = {}
+    for dst_rel in claimed:
+        out_dir, name = os.path.split(dst_rel)
+        planned.setdefault(out_dir, set()).add(name)
+    sync_gallery(args.dry_run, pruned, planned)
     print()
     if check_references():
         print("\nthe pages list their images by hand, so fix the lines above "
