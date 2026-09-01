@@ -97,6 +97,8 @@
 \begin{rSection}{Journal Papers}
 \begin{etaremune}
 
+    \item Ying Xiao, Zhenpeng Chen \faEnvelopeO, \textbf{Jen-tse Huang}, Wenting Chen, Yepang Liu, Kezhi Li, Mohammad Reza Mousavi, Richard Dobson, Jie M. Zhang, 2026. A Scoping Review of Bias in Large AI Models for Medicine and Healthcare. \textit{In Proceedings of the Communications Health}. (Commun. Health'26)
+
     \item Ziyi Liu, Priyanka Dey, \textbf{Jen-tse Huang}, Zhenyu Zhao, Bowen Jiang, Rahul Gupta, Yang Liu, Yao Du, Jieyu Zhao, 2026. Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Cultural Intelligence with CQBench. \textit{Transactions on Machine Learning Research, vol. 2026}. (TMLR'26)
 
     \item Wenxuan Wang, Wenxiang Jiao, \textbf{Jen-tse Huang}, Zhaopeng Tu \faEnvelopeO, Michael R. Lyu, 2025. On the Shortcut Learning in Multilingual Neural Machine Translation. \textit{Neurocomputing, vol. 615}, no. 128833. (Neurocomputing'25)
@@ -124,8 +126,6 @@
     \item Boyuan Chen, Sitong Fang, Jiaming Ji, Yanxu Zhu, Pengcheng Wen, Jinzhou Wu, Yingshui Tan, Boren Zheng, Mengying Yuan, Wenqi Chen, Donghai Hong, Alex Qiu, Xin Chen, Jiayi Zhou, Kaile Wang, Juntao Dai, Borong Zhang, Tianzhuo Yang, Saad Siddiqui, Isabella Duan, Yawen Duan, Brian Tse, \textbf{Jen-tse Huang}, Kun Wang, Baihui Zheng, Jiaheng Liu, Jian Yang, Yiming Li, Wenting Chen, Dongrui Liu, Lukas Vierling, Zhiheng Xi, Haobo Fu, Wenxuan Wang, Jitao Sang, Zhengyan Shi, Chi-Min Chan, Eugenie Shi, Simin Li, Juncheng Li, Wei Ji, Dong Li, Jun Song, Yinpeng Dong, Jie Fu, Bo Zheng, Min Yang, Yike Guo, Philip Torr, Zhongyuan Wang, Yaodong Yang \faEnvelopeO, Tiejun Huang \faEnvelopeO, Ya-Qin Zhang \faEnvelopeO, Hongjiang Zhang \faEnvelopeO, Andrew Yao \faEnvelopeO, 2025. AI Deception: Risks, Dynamics, and Controls. \href{https://arxiv.org/abs/2511.22619}{\textit{arXiv Preprint: 2511.22619}}
 
     \item Zhengliang Shi, Yiqun Chen, Haitao Li, Weiwei Sun, Shiyu Ni, Yougang Lyu, Run-Ze Fan, Bowen Jin, Yixuan Weng, Minjun Zhu, Qiujie Xie, Xinyu Guo, Qu Yang, Jiayi Wu, Jujia Zhao, Xiaqiang Tang, Xinbei Ma, Cunxiang Wang, Jiaxin Mao, Qingyao Ai, \textbf{Jen-tse Huang}, Wenxuan Wang, Yue Zhang, Yiming Yang, Zhaopeng Tu \faEnvelopeO, Zhaochun Ren \faEnvelopeO, 2025. Deep Research: A Systematic Survey. \href{https://arxiv.org/abs/2512.02038}{\textit{arXiv Preprint: 2512.02038}}
-
-    \item Ying Xiao, Zhenpeng Chen \faEnvelopeO, \textbf{Jen-tse Huang}, Wenting Chen, Yepang Liu, Kezhi Li, Mohammad Reza Mousavi, Richard Dobson, Jie M. Zhang, 2025. Bias in Large AI Models for Medicine and Healthcare: Survey and Challenges. \href{https://www.preprints.org/manuscript/202511.1838}{\textit{Preprints.org Preprint: 202511.1838}}
 
     \item Shuqing Li, Jiayi Yan *, Chenyu Niu *, \textbf{Jen-tse Huang}, Yun Peng, Wenxuan Wang \faEnvelopeO, Yepang Liu, Michael R Lyu, 2025. ComboBench: Can LLMs Manipulate Physical Devices to Play Virtual Reality Games? \href{https://arxiv.org/abs/2510.24706}{\textit{arXiv Preprint: 2510.24706}}
 
