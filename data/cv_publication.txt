@@ -5,7 +5,7 @@
 
     \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}. (EMNLP Main'26)
 
-    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)
+    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)\\ {\color{red} [Oral 24/2939 0.82\%]}
 
     \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, pp. 5638-5649. (KDD'26)
 
