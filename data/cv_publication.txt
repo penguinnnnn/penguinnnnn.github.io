@@ -3,6 +3,12 @@
 * equal contribution \quad \faEnvelopeO \ corresponding author
 \begin{etaremune}
 
+    \item \textbf{Jen-tse Huang}, Dasen Dai, Jen-Yuan Huang, Youliang Yuan, Xiaoyuan Liu, Wenxuan Wang \faEnvelopeO, Wenxiang Jiao, Pinjia He, Zhaopeng Tu, Haodong Duan \faEnvelopeO, 2026. Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
+
+    \item Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
+
+    \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
+
     \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}. (EMNLP Main'26)
 
     \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)\\ {\color{red} [Oral 24/2939 0.82\%]}
@@ -115,10 +121,6 @@
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.17228}{\textit{arXiv Preprint: 2605.17228}}
 
-    \item Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \href{https://arxiv.org/abs/2605.14415}{\textit{arXiv Preprint: 2605.14415}}
-
-    \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \href{https://arxiv.org/abs/2605.13625}{\textit{arXiv Preprint: 2605.13625}}
-
     \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
@@ -140,8 +142,6 @@
     \item Haoxuan Li, Mingyu Derek Ma, \textbf{Jen-tse Huang}, Zhaotian Weng, Wei Wang, Jieyu Zhao, 2025. BiasInspector: Detecting Bias in Structured Data through LLM Agents. \href{https://arxiv.org/abs/2504.04855}{\textit{arXiv Preprint: 2504.04855}}
 
     \item Xiaoying Zhang \faEnvelopeO, Da Peng, Yipeng Zhang, Zonghao Guo \faEnvelopeO, Chengyue Wu, \textbf{Jen-tse Huang}, Chi Chen, Wei Ke, Helen Meng \faEnvelopeO, Maosong Sun, 2025. Will Pre-Training Ever End? A First Step Toward Next-Generation Foundation MLLMs via Self-Improving Systematic Cognition. \href{https://arxiv.org/abs/2503.12303}{\textit{arXiv Preprint: 2503.12303}}
-
-    \item \textbf{Jen-tse Huang}, Dasen Dai, Jen-Yuan Huang, Youliang Yuan, Xiaoyuan Liu, Wenxuan Wang \faEnvelopeO, Wenxiang Jiao, Pinjia He, Zhaopeng Tu, Haodong Duan \faEnvelopeO, 2025. Human Cognitive Benchmarks Reveal Foundational Visual Gaps in MLLMs. \href{https://arxiv.org/abs/2502.16435}{\textit{arXiv Preprint: 2502.16435}}
 
     \item Yongkang Du, \textbf{Jen-tse Huang}, Jieyu Zhao, Lu Lin, 2025. FairCoder: Evaluating Social Bias of LLMs in Code Generation. \href{https://arxiv.org/abs/2501.05396}{\textit{arXiv Preprint: 2501.05396}}
 
