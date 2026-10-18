@@ -123,7 +123,7 @@
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Didi Zhou *, Faith Kamau, Amy Oh, Anne R. Links, Mark Dredze, Mary Catherine Beach, Somnath Saha, 2026. Artificial Intolerance: Stigmatizing Language in Clinical Documentation Skews Large Language Model Decision-Making. \href{https://arxiv.org/abs/2605.17228}{\textit{arXiv Preprint: 2605.17228}}
 
-    \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Ningshan Ma, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
+    \item Yunze Xiao *, Vivienne J. Zhang *, Chenghao Yang, Weihao Xuan, \textbf{Jen-tse Huang \faEnvelopeO}, 2026. The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models. \href{https://arxiv.org/abs/2604.24698}{\textit{arXiv Preprint: 2604.24698}}
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 

@@ -404,6 +404,17 @@ strong { font-weight: 800; }
 
 .member p { margin: 5px 0; font-size: 15px; }
 
+.subsection-title {
+  font-family: var(--stack);
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+  margin: 1.2em 0 0;
+  padding: 0 0 4px 11px;
+  border-bottom: 1px solid #ddd;
+}
+
 /* ---------- about: travel / photos / anime ---------- */
 
 .travel { line-height: 2.2; }
@@ -499,6 +510,7 @@ strong { font-weight: 800; }
 
   .page-title { font-size: 30px; }
   .section-title { font-size: 20px; padding-left: 0; }
+  .subsection-title { padding-left: 0; }
 
   .intro { grid-template-columns: 1fr; gap: 16px; }
   .intro-avatar { max-width: 260px; margin: 0 auto; }
