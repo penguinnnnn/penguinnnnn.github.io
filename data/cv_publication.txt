@@ -117,6 +117,8 @@
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
 
+    \item Jingyu Xiao, Dasen Dai, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Hongyu Zhang, Michael R. Lyu, 2026. InterWebCoder: Learning Interactive Webpage Generation from Executable Tests via Reinforcement Learning. \href{https://arxiv.org/abs/2610.28610}{\textit{arXiv Preprint: 2610.28610}}
+
     \item Haokai Zhao, Jie Gao, Yunze Xiao, Xintao Wang, Weihao Xuan, Aditya Joshi, Mark Dredze, \textbf{Jen-tse Huang}, 2026. On the Behavioral Traits of LLM Agents. \href{https://arxiv.org/abs/2609.32776}{\textit{arXiv Preprint: 2609.32776}}
 
     \item Xintao Wang \faEnvelopeO, Sirui Zheng, Hongqiu Wu, Weiyuan Li, \textbf{Jen-tse Huang}, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao, 2026. Agentopia: Long-Term Life Simulation and Learning in Agent Societies. \href{https://arxiv.org/abs/2606.07513}{\textit{arXiv Preprint: 2606.07513}}
