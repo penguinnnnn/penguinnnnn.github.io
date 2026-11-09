@@ -37,9 +37,9 @@
 
     \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 133886-133932. (NeurIPS'25)
 
-    \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 17981-18004. (EMNLP Main'25)
+    \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 17970-17993. (EMNLP Main'25)
 
-    \item Jingyuan Huang *, \textbf{Jen-tse Huang *}, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. AI Sees Your Location---But With A Bias Toward The Wealthy World. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 18030-18050. (EMNLP Main'25)
+    \item Jingyuan Huang *, \textbf{Jen-tse Huang *}, Ziyi Liu, Xiaoyuan Liu, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. AI Sees Your Location---But With A Bias Toward The Wealthy World. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 18019-18039. (EMNLP Main'25)
 
     \item \textbf{Jen-tse Huang}, Yuhang Yan *, Linqi Liu *, Yixin Wan, Wenxuan Wang \faEnvelopeO, Kai-Wei Chang, Michael R. Lyu, 2025. Where Fact Ends and Fairness Begins: Redefining AI Bias Evaluation through Cognitive Biases. \textit{In Findings of the Association for Computational Linguistics: EMNLP 2025}, pp. 10974-10993. (EMNLP Findings'25)
 
@@ -116,6 +116,8 @@
 
 \begin{rSection}{Preprint Papers}
 \begin{etaremune}
+
+    \item Peidi Dong, Yunze Xiao, Yu-Lin Tsai, Yichen Zheng, Heyuan Huang, Weihao Xuan, Mark Dredze, \textbf{Jen-tse Huang}, 2026. Before You Continue: Evaluating Time-Sensitive Safety Awareness in Conversational Assistants. \href{https://arxiv.org/abs/2611.06839}{\textit{arXiv Preprint: 2611.06839}}
 
     \item Jingyu Xiao, Dasen Dai, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Hongyu Zhang, Michael R. Lyu, 2026. InterWebCoder: Learning Interactive Webpage Generation from Executable Tests via Reinforcement Learning. \href{https://arxiv.org/abs/2610.28610}{\textit{arXiv Preprint: 2610.28610}}
 
