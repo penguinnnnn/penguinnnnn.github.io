@@ -5,9 +5,9 @@
 
     \item \textbf{Jen-tse Huang}, Dasen Dai, Jen-Yuan Huang, Youliang Yuan, Xiaoyuan Liu, Wenxuan Wang \faEnvelopeO, Wenxiang Jiao, Pinjia He, Zhaopeng Tu, Haodong Duan \faEnvelopeO, 2026. Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
 
-    \item Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
+    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, Hange Liu, Jingyu Xiao, Haau-sing Li, \textbf{Jen-tse Huang}, Terry Yue Zhuo, Michael R. Lyu, 2026. SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
 
-    \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
+    \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao *, Daniel Khashabi *, Mark Dredze *, 2026. How to Interpret Agent Behavior. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
 
     \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}, pp. 4999-5036. (EMNLP Main'26)
 
