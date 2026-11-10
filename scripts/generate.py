@@ -47,7 +47,8 @@ def generate_html_one_publication(row):
     if "Jen-tse Huang" in row["Corresponding"]:
         role += ",corresponding"
 
-    heading = f'<span class="pub-title">{row["Title"]}</span>'
+    # the CSV keeps LaTeX's "---" for the CV; the web page needs a real em dash
+    heading = f'<span class="pub-title">{row["Title"].replace("---", "—")}</span>'
     if row["DOI"] != '':
         heading = f'<a href="{row["DOI"]}" id="{identifier}">{heading}</a>'
 
@@ -138,7 +139,13 @@ def generate_cv_one_publication(row):
 
     remark = '' if row["Remark"] == '' else '\\\\ {\\color{red} [' + row["Remark"] + ']}'
 
-    if row["Abbreviation"] == "NeurIPS" or "Findings" in row["Abbreviation"]:
+    # a journal paper with no vol / issue / pages yet is accepted but not yet published
+    to_appear = (row["Type"] == 'Journal' and row["Abbreviation"] not in PREPRINT_VENUES
+                 and row["Vol"] == '' and row["No"] == '' and row["Page"] == '')
+
+    if to_appear:
+        proceedings = row["Publication"]
+    elif row["Abbreviation"] == "NeurIPS" or "Findings" in row["Abbreviation"]:
         proceedings = f'In {row["Publication"]}'
     elif row["Abbreviation"] == "ICLR":
         proceedings = f'In the {row["Publication"]}'
@@ -156,13 +163,15 @@ def generate_cv_one_publication(row):
     else:
         proceedings = f'In Proceedings of the {row["Publication"]}'
     proceedings = '\\textit{' + proceedings + '}'
-    if row["No"] != '':
-        proceedings += f', issue. {row["No"]}'
+    if to_appear:
+        proceedings += ', to appear'
+    if row["No"] != '':  # issue number
+        proceedings += f', no. {row["No"]}'
     if row["Page"] != '':
         if '-' in row["Page"]:
             proceedings += f', pp. {row["Page"]}'
-        else:
-            proceedings += f', no. {row["Page"]}'
+        else:  # a single number is an article number, e.g. Elsevier / Nature journals
+            proceedings += f', Art. no. {row["Page"]}'
     if row["Abbreviation"] not in PREPRINT_VENUES:
         proceedings += f'. ({row["Abbreviation"]}\'{row["Year"][-2:]})'
     else:

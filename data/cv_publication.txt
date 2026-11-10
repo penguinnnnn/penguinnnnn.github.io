@@ -9,13 +9,13 @@
 
     \item Jie Gao, Kaiser Sun, \textbf{Jen-tse Huang}, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze, 2026. How to Interpret Agent Behavior. \textit{In Advances in Neural Information Processing Systems 39}. (NeurIPS'26)
 
-    \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}. (EMNLP Main'26)
+    \item Nicole Hsing *, Asuka Yuxi Zheng *, Yi Zhao, Haoqin Tu, \textbf{Jen-tse Huang}, 2026. You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents. \textit{In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing}, pp. 4999-5036. (EMNLP Main'26)
 
-    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)\\ {\color{red} [Outstanding Paper Award 3/2939 0.1\%]}
+    \item Emmy Liu, Kaiser Sun, Millicent Li, Isabelle Lee, Lindia Tjuatja, \textbf{Jen-tse Huang}, Graham Neubig, 2026. What Do Language Models Learn and When? The Implicit Curriculum Hypothesis. \textit{In Proceedings of the Third Conference on Language Modeling}. (COLM'26)\\ {\color{red} [Outstanding Paper Award 3/2939 0.1\%]}
 
     \item Jingyu Xiao, Jiantong Qin, Shuoqi Li, Man Ho Lam \faEnvelopeO, Yuxuan Wan, \textbf{Jen-tse Huang}, Yintong Huo \faEnvelopeO, Michael R. Lyu, 2026. Component-based Reusable UI Code Generation for Complex Websites via Semantic Segmentation and Fine-grained Feedback. \textit{In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining}, pp. 5638-5649. (KDD'26)
 
-    \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning, PMLR vol. 306}, pp. 172649-172665. (ICML'26)
+    \item Yunze Xiao *, Gordon Dai *, Shahan Ali Memon *, \textbf{Jen-tse Huang \faEnvelopeO}, Maarten Sap \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Position: AI Welfare Is Bullshit. \textit{In Proceedings of the 43rd International Conference on Machine Learning, PMLR vol. 306}, pp. 172649-172665. (ICML'26)
 
     \item Xintao Wang *, Jian Yang *, Weiyuan Li, Rui Xie, \textbf{Jen-tse Huang}, Jun Gao, Shuai Huang, Yueping Kang, Yuanli Guo, Hongwei Feng \faEnvelopeO, Yanghua Xiao \faEnvelopeO, 2026. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns. \textit{In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp. 38486-38517. (ACL Main'26)
 
@@ -35,7 +35,7 @@
 
     \item Youliang Yuan, Wenxiang Jiao, Yuejin Xie, Chihao Shen, Menghan Tian, Wenxuan Wang, \textbf{Jen-tse Huang}, Pinjia He, 2025. Towards Evaluating Proactive Risk Awareness of Multimodal Language Models. \textit{In Advances in Neural Information Processing Systems 38}, pp. 7821-7851. (NeurIPS'25)
 
-    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 133886-133932. (NeurIPS'25)
+    \item Man Ho Lam, Chaozheng Wang \faEnvelopeO, \textbf{Jen-tse Huang}, Michael R. Lyu, 2025. CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning. \textit{In Advances in Neural Information Processing Systems 38}, pp. 120782-120828. (NeurIPS'25)
 
     \item \textbf{Jen-tse Huang *}, Jiantong Qin *, Jianping Zhang, Youliang Yuan, Wenxuan Wang \faEnvelopeO, Jieyu Zhao \faEnvelopeO, 2025. VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 17970-17993. (EMNLP Main'25)
 
@@ -43,9 +43,9 @@
 
     \item \textbf{Jen-tse Huang}, Yuhang Yan *, Linqi Liu *, Yixin Wan, Wenxuan Wang \faEnvelopeO, Kai-Wei Chang, Michael R. Lyu, 2025. Where Fact Ends and Fairness Begins: Redefining AI Bias Evaluation through Cognitive Biases. \textit{In Findings of the Association for Computational Linguistics: EMNLP 2025}, pp. 10974-10993. (EMNLP Findings'25)
 
-    \item Wenxuan Wang, Juluan Shi *, Zixuan Ling *, Yuk-Kit Chan *, Chaozheng Wang, Cheryl Lee, Youliang Yuan, \textbf{Jen-tse Huang \faEnvelopeO}, Wenxiang Jiao \faEnvelopeO, Michael R. Lyu, 2025. Learning to Ask: When LLM Agents Meet Unclear Instruction. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 21784-21795. (EMNLP Main'25)
+    \item Wenxuan Wang, Juluan Shi *, Zixuan Ling *, Yuk-Kit Chan *, Chaozheng Wang, Cheryl Lee, Youliang Yuan, \textbf{Jen-tse Huang \faEnvelopeO}, Wenxiang Jiao \faEnvelopeO, Michael R. Lyu, 2025. Learning to Ask: When LLM Agents Meet Unclear Instruction. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 21773-21784. (EMNLP Main'25)
 
-    \item Cheryl Lee \faEnvelopeO, Chunqiu Steven Xia, Longji Yang, \textbf{Jen-tse Huang}, Zhouruixin Zhu, Lingming Zhang, Michael R. Lyu, 2025. UniDebugger: Hierarchical Multi-Agent Framework for Unified Software Debugging. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 18248-18277. (EMNLP Main'25)
+    \item Cheryl Lee \faEnvelopeO, Chunqiu Steven Xia, Longji Yang, \textbf{Jen-tse Huang}, Zhouruixing Zhu, Lingming Zhang, Michael R. Lyu, 2025. UniDebugger: Hierarchical Multi-Agent Framework for Unified Software Debugging. \textit{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp. 18237-18266. (EMNLP Main'25)
 
     \item Wenxuan Wang, Xiaoyuan Liu, Kuiyi Gao, \textbf{Jen-tse Huang}, Youliang Yuan, Pinjia He, Shuai Wang, Zhaopeng Tu \faEnvelopeO, 2025. Can't See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for Multimodal LLMs. \textit{In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp. 16993-17006. (ACL Main'25)
 
@@ -103,13 +103,13 @@
 \begin{rSection}{Journal Papers}
 \begin{etaremune}
 
-    \item Weihao Xuan \faEnvelopeO *, Qingcheng Zeng *, Jiarui Liu *, Rui Yang *, Yunze Xiao, Yinxi Li, Zeqi Zhou, Weiwei Sun, Heli Qi, Leyang Cui, Tianhao Ma, Hanqun Cao, Junjue Wang, Tianyu Liu, Weihua Du, Yueqi Song, Jiayi Geng, Matthew Yu Heng Wong, Rob Voigt, Chuan Hong, Xiang Yue, \textbf{Jen-tse Huang}, Xuhai Xu, Yifan Peng, Pheng Ann Heng, Yiming Yang, Bernhard Schölkopf, Zhijing Jin, Nan Liu \faEnvelopeO, Naoto Yokoya \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Learning from Use: Test-Time Learning in Large Language Models and Agents. \textit{Nature Reviews Computing, vol. 1}. (Nat. Rev. Comput.'26)
+    \item Weihao Xuan \faEnvelopeO *, Qingcheng Zeng *, Jiarui Liu *, Rui Yang *, Yunze Xiao, Yinxi Li, Zeqi Zhou, Weiwei Sun, Heli Qi, Leyang Cui, Tianhao Ma, Hanqun Cao, Junjue Wang, Tianyu Liu, Weihua Du, Yueqi Song, Jiayi Geng, Matthew Yu Heng Wong, Rob Voigt, Chuan Hong, Xiang Yue, \textbf{Jen-tse Huang}, Xuhai Xu, Yifan Peng, Pheng Ann Heng, Yiming Yang, Bernhard Schölkopf, Zhijing Jin, Nan Liu \faEnvelopeO, Naoto Yokoya \faEnvelopeO, Mona Diab \faEnvelopeO, 2026. Learning from Use: Test-Time Learning in Large Language Models and Agents. \textit{Nature Reviews Computing}, to appear. (Nat. Rev. Comput.'26)
 
-    \item Ying Xiao, Zhenpeng Chen \faEnvelopeO, \textbf{Jen-tse Huang}, Wenting Chen, Yepang Liu, Kezhi Li, Mohammad Reza Mousavi, Richard Dobson, Jie M. Zhang, 2026. A Scoping Review of Bias in Large AI Models for Medicine and Healthcare. \textit{Communications Health, vol. 1}, issue. 42. (Commun. Health'26)
+    \item Ying Xiao, Zhenpeng Chen \faEnvelopeO, \textbf{Jen-tse Huang}, Wenting Chen, Yepang Liu, Kezhi Li, Mohammad Reza Mousavi, Richard Dobson, Jie M. Zhang, 2026. A Scoping Review of Bias in Large AI Models for Medicine and Healthcare. \textit{Communications Health, vol. 1}, no. 1, Art. no. 42. (Commun. Health'26)
 
     \item Ziyi Liu, Priyanka Dey, \textbf{Jen-tse Huang}, Zhenyu Zhao, Bowen Jiang, Rahul Gupta, Yang Liu, Yao Du, Jieyu Zhao, 2026. Can LLMs Grasp Implicit Cultural Values? Benchmarking LLMs' Cultural Intelligence with CQBench. \textit{Transactions on Machine Learning Research, vol. 2026}. (TMLR'26)
 
-    \item Wenxuan Wang, Wenxiang Jiao, \textbf{Jen-tse Huang}, Zhaopeng Tu \faEnvelopeO, Michael R. Lyu, 2025. On the Shortcut Learning in Multilingual Neural Machine Translation. \textit{Neurocomputing, vol. 615}, no. 128833. (Neurocomputing'25)
+    \item Wenxuan Wang, Wenxiang Jiao, \textbf{Jen-tse Huang}, Zhaopeng Tu \faEnvelopeO, Michael R. Lyu, 2025. On the Shortcut Learning in Multilingual Neural Machine Translation. \textit{Neurocomputing, vol. 615}, Art. no. 128833. (Neurocomputing'25)
 
 \end{etaremune}
 \end{rSection}
@@ -131,7 +131,7 @@
 
     \item \textbf{Jen-tse Huang \faEnvelopeO *}, Jiantong Qin *, Xueli Qiu, Sharon Levy, Michelle R. Kaufman, Mark Dredze, 2026. Knowing But Not Doing: Convergent Morality and Divergent Action in LLMs. \href{https://arxiv.org/abs/2601.07972}{\textit{arXiv Preprint: 2601.07972}}
 
-    \item Boyuan Chen, Sitong Fang, Jiaming Ji, Yanxu Zhu, Pengcheng Wen, Jinzhou Wu, Yingshui Tan, Boren Zheng, Mengying Yuan, Wenqi Chen, Donghai Hong, Alex Qiu, Xin Chen, Jiayi Zhou, Kaile Wang, Juntao Dai, Borong Zhang, Tianzhuo Yang, Saad Siddiqui, Isabella Duan, Yawen Duan, Brian Tse, \textbf{Jen-tse Huang}, Kun Wang, Baihui Zheng, Jiaheng Liu, Jian Yang, Yiming Li, Wenting Chen, Dongrui Liu, Lukas Vierling, Zhiheng Xi, Haobo Fu, Wenxuan Wang, Jitao Sang, Zhengyan Shi, Chi-Min Chan, Eugenie Shi, Simin Li, Juncheng Li, Wei Ji, Dong Li, Jun Song, Yinpeng Dong, Jie Fu, Bo Zheng, Min Yang, Yike Guo, Philip Torr, Zhongyuan Wang, Yaodong Yang \faEnvelopeO, Tiejun Huang \faEnvelopeO, Ya-Qin Zhang \faEnvelopeO, Hongjiang Zhang \faEnvelopeO, Andrew Yao \faEnvelopeO, 2025. AI Deception: Risks, Dynamics, and Controls. \href{https://arxiv.org/abs/2511.22619}{\textit{arXiv Preprint: 2511.22619}}
+    \item Boyuan Chen, Sitong Fang, Jiaming Ji, Yanxu Zhu, Pengcheng Wen, Jinzhou Wu, Yingshui Tan, Boren Zheng, Mengying Yuan, Wenqi Chen, Donghai Hong, Alex Qiu, Xin Chen, Jiayi Zhou, Kaile Wang, Juntao Dai, Borong Zhang, Tianzhuo Yang, Saad Siddiqui, Isabella Duan, Yawen Duan, Brian Tse, \textbf{Jen-tse Huang}, Kun Wang, Baihui Zheng, Jiaheng Liu, Jian Yang, Yiming Li, Wenting Chen, Dongrui Liu, Lukas Vierling, Zhiheng Xi, Haobo Fu, Wenxuan Wang, Jitao Sang, Zhengyan Shi, Chi-Min Chan, Eugenie Shi, Simin Li, Juncheng Li, Jian Yang, Wei Ji, Dong Li, Jinglin Yang, Jun Song, Yinpeng Dong, Jie Fu, Bo Zheng, Min Yang, Yike Guo, Philip Torr, Robert Trager, Yi Zeng, Zhongyuan Wang, Yaodong Yang \faEnvelopeO, Tiejun Huang \faEnvelopeO, Ya-Qin Zhang \faEnvelopeO, Hongjiang Zhang \faEnvelopeO, Andrew Yao \faEnvelopeO, 2025. AI Deception: Risks, Dynamics, and Controls. \href{https://arxiv.org/abs/2511.22619}{\textit{arXiv Preprint: 2511.22619}}
 
     \item Zhengliang Shi, Yiqun Chen, Haitao Li, Weiwei Sun, Shiyu Ni, Yougang Lyu, Run-Ze Fan, Bowen Jin, Yixuan Weng, Minjun Zhu, Qiujie Xie, Xinyu Guo, Qu Yang, Jiayi Wu, Jujia Zhao, Xiaqiang Tang, Xinbei Ma, Cunxiang Wang, Jiaxin Mao, Qingyao Ai, \textbf{Jen-tse Huang}, Wenxuan Wang, Yue Zhang, Yiming Yang, Zhaopeng Tu \faEnvelopeO, Zhaochun Ren \faEnvelopeO, 2025. Deep Research: A Systematic Survey. \href{https://arxiv.org/abs/2512.02038}{\textit{arXiv Preprint: 2512.02038}}
 
@@ -149,7 +149,7 @@
 
     \item Xiaoying Zhang \faEnvelopeO, Da Peng, Yipeng Zhang, Zonghao Guo \faEnvelopeO, Chengyue Wu, \textbf{Jen-tse Huang}, Chi Chen, Wei Ke, Helen Meng \faEnvelopeO, Maosong Sun, 2025. Will Pre-Training Ever End? A First Step Toward Next-Generation Foundation MLLMs via Self-Improving Systematic Cognition. \href{https://arxiv.org/abs/2503.12303}{\textit{arXiv Preprint: 2503.12303}}
 
-    \item Yongkang Du, \textbf{Jen-tse Huang}, Jieyu Zhao, Lu Lin, 2025. FairCoder: Evaluating Social Bias of LLMs in Code Generation. \href{https://arxiv.org/abs/2501.05396}{\textit{arXiv Preprint: 2501.05396}}
+    \item Yongkang Du, \textbf{Jen-tse Huang}, Jieyu Zhao, Lu Lin, 2025. FairCoder: Probing LLM Bias in High-Stakes Decision Making via Coding Tasks. \href{https://arxiv.org/abs/2501.05396}{\textit{arXiv Preprint: 2501.05396}}
 
     \item Jen-yuan Huang, Haofan Wang, Qixun Wang, Xu Bai, Hao Ai, Peng Xing, \textbf{Jen-tse Huang}, 2024. InstantIR: Blind Image Restoration with Instant Generative Reference. \href{https://arxiv.org/abs/2410.06551}{\textit{arXiv Preprint: 2410.06551}}
 
